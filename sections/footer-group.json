@@ -4,6 +4,25 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "brand_information_L7QMmf": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        },
+        "link_list_z6jDER": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "brand_information_L7QMmf",
+        "link_list_z6jDER"
+      ],
       "settings": {
         "color_scheme": "scheme-4",
         "newsletter_enable": true,

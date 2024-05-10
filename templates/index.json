@@ -10,33 +10,32 @@
             "heading_size": "h0"
           }
         },
+        "text_rqibk7": {
+          "type": "text",
+          "settings": {
+            "text": "We provide Immersive virtual racing experiences using professional grade simulators in Vaughan, Ontario.",
+            "text_style": "subtitle"
+          }
+        },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Book a simulator",
+            "button_label_1": "Book a Simulator",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": false,
             "button_label_2": "Learn More",
             "button_link_2": "shopify:\/\/pages\/about-us",
             "button_style_secondary_2": true
           }
-        },
-        "text_rqibk7": {
-          "type": "text",
-          "settings": {
-            "text": "Immersive virtual racing experience using professional grade equipment located in Vaughan, ON.",
-            "text_style": "subtitle"
-          }
         }
       },
       "block_order": [
         "heading",
-        "button",
-        "text_rqibk7"
+        "text_rqibk7",
+        "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/eb79aa_36d1350752ba4d25bcc6050fff80d38e_mv2.webp",
-        "image_overlay_opacity": 60,
+        "image_overlay_opacity": 70,
         "image_height": "medium",
         "desktop_content_position": "top-left",
         "show_text_box": false,
@@ -54,19 +53,19 @@
         "column_DWGR8T": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/eb79aa_7031a81a68e54201ab410c2806cff421_mv2_ac993464-5989-4bc1-a908-225bcb12cd0a.webp",
-            "title": "Entry Level",
-            "text": "<p>Best for those who want a taste of sim racing<\/p>",
+            "image": "shopify:\/\/shop_images\/file.jpg",
+            "title": "Book a Simulator",
+            "text": "<p>Race on one of our simulators for 30 minutes or 1 hour. We offer three tiers of simulators: Entry, Intermediate, and Advanced.<\/p>",
             "link_label": "Learn More",
-            "link": "shopify:\/\/collections\/entry"
+            "link": ""
           }
         },
         "column_aJ9him": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/eb79aa_3b1c00ca059d45409efe712a7dbd16fc_mv2_1_8c455b59-4bef-457f-96c6-6fe83290bbf4.webp",
-            "title": "Intermediate Level",
-            "text": "<p>For the driver that wants to experience added realism from the help of basic motion technology<\/p>",
+            "image": "shopify:\/\/shop_images\/file_1.jpg",
+            "title": "Parties & Events",
+            "text": "<p>Hosting an event? Rent out our space for your party, or have simulators delivered to a venue of your choice!<\/p>",
             "link_label": "Learn More",
             "link": "shopify:\/\/collections\/intermediate"
           }
@@ -74,9 +73,9 @@
         "column_HeCxdQ": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/eb79aa_f413bf4c8bcd4ef6aa1f1cbdb8a9d6be_mv2_c799dd6c-015e-4958-b423-71fe6239e894.webp",
-            "title": "Advanced Level",
-            "text": "<p>Top-of-the-line motion simulation technology for the highest level of driving realism, delivering 3 times more motion range than the intermediate level<\/p>",
+            "image": "shopify:\/\/shop_images\/file_2.jpg",
+            "title": "League Racing",
+            "text": "<p>Experience wheel-to-wheel racing with us weekly by joining our racing league.<\/p>",
             "link_label": "Learn More",
             "link": "shopify:\/\/collections\/advanced"
           }
@@ -87,13 +86,16 @@
         "column_aJ9him",
         "column_HeCxdQ"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
-        "title": "Pick Your Simulation Level",
+        "title": "Our Services",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
-        "column_alignment": "center",
+        "column_alignment": "left",
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
@@ -103,10 +105,108 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "multicolumn_FErwLJ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_nfpBk7": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9yD6Wz": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_rEEwTk": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_nfpBk7",
+        "column_9yD6Wz",
+        "column_rEEwTk"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_7BFarY": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_FUUWy9": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_JDcVxE": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_FUUWy9",
+        "column_JDcVxE"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
-    "multicolumn_fzwEgU"
+    "multicolumn_fzwEgU",
+    "multicolumn_FErwLJ",
+    "multicolumn_7BFarY"
   ]
 }
