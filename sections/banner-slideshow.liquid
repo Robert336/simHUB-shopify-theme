@@ -1,0 +1,154 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
+
+{%- style -%}
+  #Banner-{{ block.id }}::after {
+    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+  }
+{%- endstyle -%}
+
+
+<div
+  id="Banner-{{ section.id }}"
+  class="
+    banner 
+    banner--{{ section.settings.banner_height }}
+    "
+>
+  {%- for block in section.blocks -%}
+    
+    {%- style -%}
+      #Banner-{{ block.id }}::after {
+        opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
+      }
+    {%- endstyle -%}
+
+    {%- liquid
+      assign image_height = block.settings.banner_slide_image.width | divided_by: block.settings.banner_slide_image.aspect_ratio
+      assign sizes = '100vw'
+      assign image_class = 'banner__media'
+      assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+    -%}
+    <div class="banner__media media">
+      {{
+        block.settings.banner_slide_image
+        | image_url: width: 3840
+        | image_tag:
+          width: block.settings.banner_slide_image.width,
+          height: image_height,
+          class: image_class,
+          sizes: sizes,
+          widths: widths,
+          fetchpriority: 'auto'
+      }}
+    </div>
+    <div class="banner__content banner__content--middle-left">
+      <div class="banner__box content-container content-container-full-width-mobile">
+        <h1>{{- block.settings.header_text -}}</h1>
+      </div>
+    </div>
+      
+  {%- endfor -%}
+</div>
+
+
+{%- if request.design_mode -%}
+  <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Banner Slideshow",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "default": "medium",
+      "label": "t:sections.slideshow.settings.slide_height.label",
+      "type": "select",
+      "id": "banner_height",
+      "options": [
+        {
+          "value": "small",
+          "label": "t:sections.slideshow.settings.slide_height.options__2.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.slideshow.settings.slide_height.options__3.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.slideshow.settings.slide_height.options__4.label"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Banner Slide",
+      "type": "banner_slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "banner_slide_image",
+          "label": "Image"
+        },
+        {
+          "type": "range",
+          "id": "image_overlay_opacity",
+          "min": 0,
+          "max": 100,
+          "step": 10,
+          "unit": "%",
+          "label": "t:sections.image-banner.settings.image_overlay_opacity.label",
+          "default": 0
+        },
+        {
+          "type": "text",
+          "id": "header_text",
+          "label": "Header",
+          "placeholder": "Header Goes Here!"
+        },
+        {
+          "type": "text",
+          "id": "sub_header",
+          "label": "Sub Header",
+          "placeholder": "Sub heading to explain a little more stuff..."
+        },
+        {
+          "type": "text",
+          "id": "primary_button_label",
+          "label": "Primary Button Label",
+          "default": "Button text"
+        },
+        {
+          "type": "url",
+          "id": "primary_button_link",
+          "label": "Primary Button link"
+        },
+        {
+          "type": "text",
+          "id": "secondary_button_label",
+          "label": "Secondary Button Label",
+          "default": "Button text"
+        },
+        {
+          "type": "url",
+          "id": "secondary_button_link",
+          "label": "Secondary Button link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner Slideshow"
+    }
+  ]
+
+
+}
+{% endschema %}
