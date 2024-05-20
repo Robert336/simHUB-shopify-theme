@@ -859,6 +859,11 @@ summary::-webkit-details-marker {
   row-gap: var(--grid-mobile-vertical-spacing);
 }
 
+
+.grid--1-col.grid-no-gap {
+  column-gap: 0;
+}
+
 @media screen and (min-width: 750px) {
   .grid {
     column-gap: var(--grid-desktop-horizontal-spacing);
@@ -1149,7 +1154,7 @@ deferred-media {
 
 .button--secondary,
 .button--tertiary {
-  --color-button: var(--color-secondary-button);
+  --color-button: var(---color-secondary-button);
   --color-button-text: var(--color-secondary-button-text);
 }
 
@@ -1256,10 +1261,12 @@ button.shopify-payment-button__button--unbranded {
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
       rgba(var(--color-button-text), var(--border-opacity)),
     0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 .button--secondary:after {
   --border-opacity: var(--buttons-border-opacity);
+  
 }
 
 .button:focus-visible,

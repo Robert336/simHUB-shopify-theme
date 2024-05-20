@@ -263,6 +263,15 @@ slider-component.slider-component-full-width {
   }
 }
 
+.force-white-dots .slider-counter__link--dots .dot {
+  border-color: rgba(255, 255, 255, 1);
+}
+
+.force-white-dots .slider-counter__link--active.slider-counter__link--dots .dot {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+
 .slider-counter__link--dots .dot {
   width: 1rem;
   height: 1rem;
