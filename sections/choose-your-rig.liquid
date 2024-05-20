@@ -1,0 +1,84 @@
+<div class="choose-your-rig-section">
+  <div class="container">
+    <h2 class="section-title">Choose Your Rig</h2>
+    <div class="rig-cards">
+      <div class="rig-card">
+        <img src="{{ 'entry-thumb.png' | asset_url }}" alt="Entry Rig" width=100% height="auto">
+        <div class="rig-info">
+          <h3>Entry</h3>
+          <p>Best for those who want a taste of sim racing</p>
+          <a href="#" class="rig-link">View simulator specs</a>
+        </div>
+      </div>
+      <div class="rig-card">
+        <img src="{{ 'inter-thumb.png' | asset_url }}" alt="Intermediate Rig" width=100% height="auto">
+        <div class="rig-info">
+          <h3>Intermediate</h3>
+          <p>For the driver that wants to experience added realism from the help of basic motion technology</p>
+          <a href="#" class="rig-link">View simulator specs</a>
+        </div>
+      </div>
+      <div class="rig-card">
+        <img src="{{ 'adv-thumb.png' | asset_url }}" alt="Advanced Rig" width=100% height="auto">
+        <div class="rig-info">
+          <h3>Advanced</h3>
+          <p>Top-of-the-line motion simulation technology</p>
+          <a href="#" class="rig-link">View simulator specs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.choose-your-rig-section {
+  background-color: #10111B;
+  padding: 50px 0;
+  text-align: center;
+  height: 841;
+}
+.choose-your-rig-section .section-title {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.choose-your-rig-section .rig-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.choose-your-rig-section .rig-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 27%;
+  height: 20%;
+}
+.choose-your-rig-section .rig-info {
+  padding: 20px;
+}
+.choose-your-rig-section .rig-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.choose-your-rig-section .rig-info p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.choose-your-rig-section .rig-link {
+  color: #10111B;
+}
+</style>
+
+{% schema %}
+{
+  "name": "Choose Your Rig",
+  "settings": [],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Choose Your Rig"
+    }
+  ]
+}
+{% endschema %}
