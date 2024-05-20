@@ -201,12 +201,18 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "choose_your_rig_ApbpPn": {
+      "type": "choose-your-rig",
+      "settings": {
+      }
     }
   },
   "order": [
     "image_banner",
     "multicolumn_fzwEgU",
     "multicolumn_FErwLJ",
-    "multicolumn_7BFarY"
+    "multicolumn_7BFarY",
+    "choose_your_rig_ApbpPn"
   ]
 }
