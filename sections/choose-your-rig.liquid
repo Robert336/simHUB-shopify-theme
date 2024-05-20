@@ -2,71 +2,185 @@
   <div class="container">
     <h2 class="section-title">Choose Your Rig</h2>
     <div class="rig-cards">
-      <div class="rig-card">
+      <div class="rig-card" id="rig-1">
         <img src="{{ 'entry-thumb.png' | asset_url }}" alt="Entry Rig" width=100% height="auto">
         <div class="rig-info">
-          <h3>Entry</h3>
+          <h2>Entry</h2>
           <p>Best for those who want a taste of sim racing</p>
           <a href="#" class="rig-link">View simulator specs</a>
         </div>
       </div>
-      <div class="rig-card">
+      <div class="rig-card" id="rig-2">
         <img src="{{ 'inter-thumb.png' | asset_url }}" alt="Intermediate Rig" width=100% height="auto">
         <div class="rig-info">
-          <h3>Intermediate</h3>
+          <h2>Intermediate</h2>
           <p>For the driver that wants to experience added realism from the help of basic motion technology</p>
           <a href="#" class="rig-link">View simulator specs</a>
         </div>
       </div>
-      <div class="rig-card">
+      <div class="rig-card" id="rig-3">
         <img src="{{ 'adv-thumb.png' | asset_url }}" alt="Advanced Rig" width=100% height="auto">
         <div class="rig-info">
-          <h3>Advanced</h3>
+          <h2>Advanced</h2>
           <p>Top-of-the-line motion simulation technology</p>
           <a href="#" class="rig-link">View simulator specs</a>
         </div>
       </div>
     </div>
+    <div class="slider">
+        <div class="slider-icon chevron-left">{% render 'icon-chevron-left' %}</div>
+        <span class="dot" id="dot-1"></span>
+        <span class="dot" id="dot-2"></span>
+        <span class="dot" id="dot-3"></span>
+        <div class="slider-icon chevron-right">{% render 'icon-chevron-right' %}</div>
+    </div>
   </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var cardsContainer = document.querySelector('.rig-cards');
+  var cards = Array.from(cardsContainer.children);
+  var currentIndex = 2; 
+  let newDot = 2;
+  let oldDot = 1;
+
+  document.querySelector('.chevron-left').addEventListener('click', function() {
+    rotateCards('left');
+    oldDot = newDot;
+    if (oldDot == 1) {
+        newDot = 3;
+    } else {
+        newDot -= 1;
+    }
+  });
+
+  document.querySelector('.chevron-right').addEventListener('click', function() {
+    rotateCards('right');
+    oldDot = newDot;
+    if (oldDot == 3) {
+        newDot = 1;
+    } else {
+        newDot += 1;
+    }
+  });
+
+  function rotateCards(direction) {
+    if (direction === 'right') {
+      cards.push(cards.shift());
+    } else if (direction === 'left') {
+      cards.unshift(cards.pop());
+    }
+    updateCardPositions();
+  }
+
+  function updateCardPositions() {
+    cardsContainer.innerHTML = '';
+    cards.forEach(card => cardsContainer.appendChild(card));
+    updateFocus();
+  }
+
+  function updateFocus() {
+    cards.forEach(card => card.classList.remove('focused'));
+    cards[Math.floor(cards.length / 2)].classList.add('focused');
+    var oldDotDoc = document.getElementById('dot-' + oldDot);
+    var newDotDoc = document.getElementById('dot-' + newDot);
+    oldDotDoc.classList.remove('focus');
+    newDotDoc.classList.add('focus');
+  }
+  updateFocus();
+});
+</script>
 
 <style>
 .choose-your-rig-section {
   background-color: #10111B;
-  padding: 50px 0;
+  padding: 20px;
   text-align: center;
-  height: 841;
+  height: auto;
 }
 .choose-your-rig-section .section-title {
   color: #ffffff;
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 3.5rem;
+  margin-bottom: 40px;
+}
+.choose-your-rig-section .slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #1b1c2c;
+  margin: 40px auto;
+  width: 180px; 
+  height: 36px;
+  border-radius: 50px;
+  padding: 0 5px;
+}
+.choose-your-rig-section .slider-icon {
+  cursor: pointer;
+  margin: auto;
+}
+.choose-your-rig-section .dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 6px;
+  background-color: #38438E;
+  border-radius: 50%;
+  display: inline-block;
+}
+.choose-your-rig-section .dot.focus {
+  background-color: #fff;
+  transform: scale(1);
 }
 .choose-your-rig-section .rig-cards {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  transition: transform 0.5s ease-in-out; 
+  width: 100%;
+  gap: 40px;
 }
 .choose-your-rig-section .rig-card {
+  transition: all 0.5s ease-in-out;
   background-color: #ffffff;
   border-radius: 8px;
   overflow: hidden;
   width: 27%;
-  height: 20%;
+  height: 330px;
+  position: relative;
+}
+.choose-your-rig-section .rig-card.focused {
+    transform: scale(1.1);
+    z-index: 10; 
+    transition: transform 0.3s ease-in-out;
 }
 .choose-your-rig-section .rig-info {
-  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #ffffff;
+  padding: 10px;
+  padding-left: 15px;
+  text-align: left;
 }
-.choose-your-rig-section .rig-info h3 {
-  font-size: 1.5rem;
+.choose-your-rig-section .rig-info h2 {
+  color: #10111B;
+  font-size: 2rem;
+  font-weight: 900;
   margin-bottom: 10px;
 }
 .choose-your-rig-section .rig-info p {
   font-size: 1rem;
-  margin-bottom: 20px;
+  font-weight: 400;
+  color: #10111B;
 }
 .choose-your-rig-section .rig-link {
   color: #10111B;
+  font-size: 1rem;
+  font-weight: 900;
+  position: absolute;
+  text-decoration: none;
+  bottom: 15px;
+  left: 15px;
 }
 </style>
 
