@@ -79,6 +79,7 @@
           class="
             banner 
             banner--{{ section.settings.banner_height }}
+            banner--content-align-mobile-center
             slideshow__slide grid__item grid--1-col slider_slide"
           role="group"
           aria-roledescription="{{ 'sections.slideshow.slide' | t }}"
@@ -95,7 +96,7 @@
                 {{ block.settings.subtitle }}
               </p>
               <div
-                class="banner__buttons{% if block.settings.primary_button_label != blank and block.settings.secondary_button_label != blank %} banner__buttons--multiple{% endif %}"
+                class="banner-buttons-container banner__buttons{% if block.settings.primary_button_label != blank and block.settings.secondary_button_label != blank %} banner__buttons--multiple{% endif %}"
                 {{ block.shopify_attributes }}
               >
                 {%- if block.settings.primary_button_label != blank -%}

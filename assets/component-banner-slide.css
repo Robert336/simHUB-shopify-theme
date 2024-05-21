@@ -15,6 +15,10 @@
   gap: 8px;
 }
 
+.banner-buttons-container {
+  margin-bottom: 20px;
+}
+
 
 .slideshow-controls-container {
   position: absolute;
