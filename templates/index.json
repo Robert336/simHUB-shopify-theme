@@ -9,10 +9,12 @@
             "banner_slide_image": "shopify:\/\/shop_images\/file.jpg",
             "image_overlay_opacity": 70,
             "header_text": "Jump Into a Racing Simulation Experience",
+            "subtitle": "We provide Immersive virtual racing experiences using professional grade simulators in Vaughan, Ontario.",
             "primary_button_label": "Book a Simulator",
             "primary_button_link": "",
             "secondary_button_label": "Learn More",
-            "secondary_button_link": ""
+            "secondary_button_link": "",
+            "color_scheme": ""
           }
         },
         "banner_slide_yH6ezN": {
@@ -23,7 +25,21 @@
             "header_text": "Hosting an Event or Party?",
             "subtitle": "Host your next event or party in our space with full access to all our simulators.",
             "primary_button_label": "Learn More",
-            "primary_button_link": "",
+            "primary_button_link": "shopify:\/\/pages\/parties-and-events",
+            "secondary_button_label": "",
+            "secondary_button_link": "",
+            "color_scheme": "scheme-5"
+          }
+        },
+        "banner_slide_rbQD69": {
+          "type": "banner_slide",
+          "settings": {
+            "banner_slide_image": "shopify:\/\/shop_images\/file.jpg",
+            "image_overlay_opacity": 70,
+            "header_text": "Race Weekly In Our League",
+            "subtitle": "Sign-up for league racing, it’s a fun social environment and competitive racing on a weekly basis.",
+            "primary_button_label": "Learn More",
+            "primary_button_link": "shopify:\/\/pages\/league-racing",
             "secondary_button_label": "",
             "secondary_button_link": "",
             "color_scheme": "scheme-5"
@@ -32,7 +48,8 @@
       },
       "block_order": [
         "banner_slide_L8M8WY",
-        "banner_slide_yH6ezN"
+        "banner_slide_yH6ezN",
+        "banner_slide_rbQD69"
       ],
       "settings": {
         "banner_height": "medium"
