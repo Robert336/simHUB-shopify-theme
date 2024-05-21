@@ -1,50 +1,41 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "banner_slideshow_teaa8b": {
+      "type": "banner-slideshow",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "banner_slide_L8M8WY": {
+          "type": "banner_slide",
           "settings": {
-            "heading": "<strong>Jump Into a Racing Simulation Experience<\/strong>",
-            "heading_size": "h0"
+            "banner_slide_image": "shopify:\/\/shop_images\/file.jpg",
+            "image_overlay_opacity": 70,
+            "header_text": "Jump Into a Racing Simulation Experience",
+            "primary_button_label": "Book a Simulator",
+            "primary_button_link": "",
+            "secondary_button_label": "Learn More",
+            "secondary_button_link": ""
           }
         },
-        "text_rqibk7": {
-          "type": "text",
+        "banner_slide_yH6ezN": {
+          "type": "banner_slide",
           "settings": {
-            "text": "We provide Immersive virtual racing experiences using professional grade simulators in Vaughan, Ontario.",
-            "text_style": "subtitle"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Book a Simulator",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": false,
-            "button_label_2": "Learn More",
-            "button_link_2": "shopify:\/\/pages\/about-us",
-            "button_style_secondary_2": true
+            "banner_slide_image": "shopify:\/\/shop_images\/file_1.jpg",
+            "image_overlay_opacity": 70,
+            "header_text": "Hosting an Event or Party?",
+            "subtitle": "Host your next event or party in our space with full access to all our simulators.",
+            "primary_button_label": "Learn More",
+            "primary_button_link": "",
+            "secondary_button_label": "",
+            "secondary_button_link": "",
+            "color_scheme": "scheme-5"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text_rqibk7",
-        "button"
+        "banner_slide_L8M8WY",
+        "banner_slide_yH6ezN"
       ],
       "settings": {
-        "image_overlay_opacity": 70,
-        "image_height": "medium",
-        "desktop_content_position": "top-left",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "scheme-5",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "banner_height": "medium"
       }
     },
     "multicolumn_fzwEgU": {
@@ -106,10 +97,15 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn_FErwLJ": {
+    "choose_your_rig_eMpTLb": {
+      "type": "choose-your-rig",
+      "settings": {
+      }
+    },
+    "multicolumn_HkaRAQ": {
       "type": "multicolumn",
       "blocks": {
-        "column_nfpBk7": {
+        "column_9VBmwq": {
           "type": "column",
           "settings": {
             "title": "Column",
@@ -118,16 +114,7 @@
             "link": ""
           }
         },
-        "column_9yD6Wz": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_rEEwTk": {
+        "column_gcqkEU": {
           "type": "column",
           "settings": {
             "title": "Column",
@@ -138,19 +125,18 @@
         }
       },
       "block_order": [
-        "column_nfpBk7",
-        "column_9yD6Wz",
-        "column_rEEwTk"
+        "column_9VBmwq",
+        "column_gcqkEU"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "Our Game of Choice: iRacing",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 2,
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "",
         "columns_mobile": "1",
@@ -159,54 +145,73 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn_7BFarY": {
-      "type": "multicolumn",
+    "collapsible_content_mcMBz9": {
+      "type": "collapsible-content",
       "blocks": {
-        "column_FUUWy9": {
-          "type": "column",
+        "collapsible_row_EHknz6": {
+          "type": "collapsible_row",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
           }
         },
-        "column_JDcVxE": {
-          "type": "column",
+        "collapsible_row_jEDpj3": {
+          "type": "collapsible_row",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_RceLBL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_RGeUQm": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
           }
         }
       },
       "block_order": [
-        "column_FUUWy9",
-        "column_JDcVxE"
+        "collapsible_row_EHknz6",
+        "collapsible_row_jEDpj3",
+        "collapsible_row_RceLBL",
+        "collapsible_row_RGeUQm"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "caption": "",
+        "heading": "Frequently Asked Questions",
         "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
+        "heading_alignment": "center",
+        "layout": "none",
         "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
-    "image_banner",
+    "banner_slideshow_teaa8b",
     "multicolumn_fzwEgU",
-    "multicolumn_FErwLJ",
-    "multicolumn_7BFarY"
+    "choose_your_rig_eMpTLb",
+    "multicolumn_HkaRAQ",
+    "collapsible_content_mcMBz9"
   ]
 }

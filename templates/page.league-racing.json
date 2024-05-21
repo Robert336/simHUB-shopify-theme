@@ -1,0 +1,333 @@
+{
+  "sections": {
+    "image_banner_t86aNw": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_UPRhXd": {
+          "type": "heading",
+          "settings": {
+            "heading": "In-Person League Racing",
+            "heading_size": "h0"
+          }
+        },
+        "text_96WQFJ": {
+          "type": "text",
+          "settings": {
+            "text": "Sign-up for a fun social environment and competitive racing on a weekly basis.",
+            "text_style": "body"
+          }
+        },
+        "buttons_ybrpVG": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Join",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_UPRhXd",
+        "text_96WQFJ",
+        "buttons_ybrpVG"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/file_1.jpg",
+        "image_overlay_opacity": 80,
+        "image_height": "small",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-4",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "multicolumn_j9eMG6": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_TJNgn6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-dollar-sign.svg",
+            "title": "Prize Pool",
+            "text": "<p>Get rewarded for your skills and dedication with prizes every season.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_XQxUMh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/racing-icon.svg",
+            "title": "Competitive Racing",
+            "text": "<p>Ensure wheel-to-wheel racing by joining a skill group that matches your pace.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_RRCPye": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-users.svg",
+            "title": "Community",
+            "text": "<p>Join a community of like-minded racing enthusiasts and make some new sim-racing friends.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_TJNgn6",
+        "column_XQxUMh",
+        "column_RRCPye"
+      ],
+      "custom_css": [
+        ".multicolumn-card__image-wrapper--third-width {width: 20%;}"
+      ],
+      "settings": {
+        "title": "Why Join Our League?",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-4de42ffb-de84-4515-b9be-5266eb66ef1e",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 32
+      }
+    },
+    "multicolumn_UUxRjy": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_BXgqVw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-number-01.svg",
+            "title": "Sign up",
+            "text": "<p>Sign up for the upcoming season and pay the entry fee<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Wmt9je": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-number-02.svg",
+            "title": "Select Skill Group",
+            "text": "<p>Choose between the Rookie or Experienced skill groups based on your pace<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_bqaGba": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-number-03.svg",
+            "title": "Compete",
+            "text": "<p>Come in on your skill group’s designated race day for 10 weeks<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_BXgqVw",
+        "column_Wmt9je",
+        "column_bqaGba"
+      ],
+      "custom_css": [
+        ".multicolumn-card__image-wrapper--third-width {width: 15%;}",
+        ".multicolumn-card {background-color: white;}",
+        ".multicolumn-card h2,h3 {color: #3f4ba0;}",
+        ".multicolumn-card p {color: black;}"
+      ],
+      "settings": {
+        "title": "How Does It Work?",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-3",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_bYRWYH": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_77egKk": {
+          "type": "column",
+          "settings": {
+            "title": "Car Class:",
+            "text": "<h2>GT3<\/h2>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_aNPLJM": {
+          "type": "column",
+          "settings": {
+            "title": "Practice Duration:",
+            "text": "<h2>## mins<\/h2>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_gww63x": {
+          "type": "column",
+          "settings": {
+            "title": "Race Duration:",
+            "text": "<h2>## mins<\/h2>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_fM8MnB": {
+          "type": "column",
+          "settings": {
+            "title": "Race Duration:",
+            "text": "<h2>## mins<\/h2>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_77egKk",
+        "column_aNPLJM",
+        "column_gww63x",
+        "column_fM8MnB"
+      ],
+      "custom_css": [
+        ".multicolumn-card {border: 1px solid white; background: transparent;}",
+        ".multicolumn-card__info {padding-bottom: 10px; padding-top: 10px;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-3",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 12,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_7RV4ma": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_Qk9Njq": {
+          "type": "column",
+          "settings": {
+            "title": "Rookie Group",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_CRYQNR": {
+          "type": "column",
+          "settings": {
+            "title": "Experienced Group",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Qk9Njq",
+        "column_CRYQNR"
+      ],
+      "settings": {
+        "title": "Season Schedule",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_qqdygh": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_k79fn3": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_k79fn3"
+      ],
+      "settings": {
+        "title": "Pricing",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 1,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner_t86aNw",
+    "main",
+    "multicolumn_j9eMG6",
+    "multicolumn_UUxRjy",
+    "multicolumn_bYRWYH",
+    "multicolumn_7RV4ma",
+    "multicolumn_qqdygh"
+  ]
+}
