@@ -3,7 +3,7 @@
     <h2 class="section-title">Choose Your Rig</h2>
     <div class="rig-cards">
       <div class="rig-card" id="rig-1">
-        <img src="{{ 'entry-thumb.png' | asset_url }}" alt="Entry Rig" width=100% height="auto">
+        <img src="{{ 'entry-thumb.png' | asset_url }}" alt="Entry Rig" width="100%" height="auto">
         <div class="rig-info">
           <h2>Entry</h2>
           <p>Best for those who want a taste of sim racing</p>
@@ -11,7 +11,7 @@
         </div>
       </div>
       <div class="rig-card" id="rig-2">
-        <img src="{{ 'inter-thumb.png' | asset_url }}" alt="Intermediate Rig" width=100% height="auto">
+        <img src="{{ 'inter-thumb.png' | asset_url }}" alt="Intermediate Rig" width="100%" height="auto">
         <div class="rig-info">
           <h2>Intermediate</h2>
           <p>For the driver that wants to experience added realism from the help of basic motion technology</p>
@@ -19,7 +19,7 @@
         </div>
       </div>
       <div class="rig-card" id="rig-3">
-        <img src="{{ 'adv-thumb.png' | asset_url }}" alt="Advanced Rig" width=100% height="auto">
+        <img src="{{ 'adv-thumb.png' | asset_url }}" alt="Advanced Rig" width="100%" height="auto">
         <div class="rig-info">
           <h2>Advanced</h2>
           <p>Top-of-the-line motion simulation technology</p>
@@ -41,17 +41,17 @@
 document.addEventListener('DOMContentLoaded', function() {
   var cardsContainer = document.querySelector('.rig-cards');
   var cards = Array.from(cardsContainer.children);
-  let currentCardIndex = 1;
+  let currentCardIndex = 1; 
 
   document.querySelector('.chevron-left').addEventListener('click', function() {
     rotateCards('left');
-    currentCardIndex = currentCardIndex === 1 ? cards.length : currentCardIndex - 1;
+    currentCardIndex = currentCardIndex === 0 ? 2 : currentCardIndex - 1;
     updateFocus();
   });
 
   document.querySelector('.chevron-right').addEventListener('click', function() {
     rotateCards('right');
-    currentCardIndex = currentCardIndex === cards.length ? 1 : currentCardIndex + 1;
+    currentCardIndex = currentCardIndex === 2 ? 0 : currentCardIndex + 1;
     updateFocus();
   });
 
@@ -74,13 +74,15 @@ document.addEventListener('DOMContentLoaded', function() {
     cards[Math.floor(cards.length / 2)].classList.add('focused');
     updateDots();
   }
-});
-  
+
   function updateDots() {
     var dots = document.querySelectorAll('.dot');
     dots.forEach(dot => dot.classList.remove('focus'));
     document.getElementById('dot-' + currentCardIndex).classList.add('focus');
   }
+
+  updateFocus(); 
+});
 </script>
 
 <style>
