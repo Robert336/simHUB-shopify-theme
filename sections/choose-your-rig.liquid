@@ -7,7 +7,7 @@
         <div class="rig-info">
           <h2>Entry</h2>
           <p>Best for those who want a taste of sim racing</p>
-          <a href="#" class="rig-link">View simulator specs</a>
+          <p class="rig-bold" style="font-weight: 900;">Click to view specs</p>
         </div>
       </div>
       <div class="rig-card" id="rig-2">
@@ -15,7 +15,7 @@
         <div class="rig-info">
           <h2>Intermediate</h2>
           <p>For the driver that wants to experience added realism from the help of basic motion technology</p>
-          <a href="#" class="rig-link">View simulator specs</a>
+          <p class="rig-bold" style="font-weight: 900;">Click to view specs</p>
         </div>
       </div>
       <div class="rig-card" id="rig-3">
@@ -23,15 +23,15 @@
         <div class="rig-info">
           <h2>Advanced</h2>
           <p>Top-of-the-line motion simulation technology</p>
-          <a href="#" class="rig-link">View simulator specs</a>
+          <p class="rig-bold" style="font-weight: 900;">Click to view specs</p>
         </div>
       </div>
     </div>
     <div class="slider">
         <div class="slider-icon chevron-left">{% render 'icon-chevron-left' %}</div>
+        <span class="dot" id="dot-0"></span>
         <span class="dot" id="dot-1"></span>
         <span class="dot" id="dot-2"></span>
-        <span class="dot" id="dot-3"></span>
         <div class="slider-icon chevron-right">{% render 'icon-chevron-right' %}</div>
     </div>
   </div>
@@ -41,28 +41,18 @@
 document.addEventListener('DOMContentLoaded', function() {
   var cardsContainer = document.querySelector('.rig-cards');
   var cards = Array.from(cardsContainer.children);
-  var currentIndex = 2; 
-  let newDot = 2;
-  let oldDot = 1;
+  let currentCardIndex = 1;
 
   document.querySelector('.chevron-left').addEventListener('click', function() {
     rotateCards('left');
-    oldDot = newDot;
-    if (oldDot == 1) {
-        newDot = 3;
-    } else {
-        newDot -= 1;
-    }
+    currentCardIndex = currentCardIndex === 1 ? cards.length : currentCardIndex - 1;
+    updateFocus();
   });
 
   document.querySelector('.chevron-right').addEventListener('click', function() {
     rotateCards('right');
-    oldDot = newDot;
-    if (oldDot == 3) {
-        newDot = 1;
-    } else {
-        newDot += 1;
-    }
+    currentCardIndex = currentCardIndex === cards.length ? 1 : currentCardIndex + 1;
+    updateFocus();
   });
 
   function rotateCards(direction) {
@@ -77,19 +67,20 @@ document.addEventListener('DOMContentLoaded', function() {
   function updateCardPositions() {
     cardsContainer.innerHTML = '';
     cards.forEach(card => cardsContainer.appendChild(card));
-    updateFocus();
   }
 
   function updateFocus() {
     cards.forEach(card => card.classList.remove('focused'));
     cards[Math.floor(cards.length / 2)].classList.add('focused');
-    var oldDotDoc = document.getElementById('dot-' + oldDot);
-    var newDotDoc = document.getElementById('dot-' + newDot);
-    oldDotDoc.classList.remove('focus');
-    newDotDoc.classList.add('focus');
+    updateDots();
   }
-  updateFocus();
 });
+  
+  function updateDots() {
+    var dots = document.querySelectorAll('.dot');
+    dots.forEach(dot => dot.classList.remove('focus'));
+    document.getElementById('dot-' + currentCardIndex).classList.add('focus');
+  }
 </script>
 
 <style>
@@ -146,6 +137,8 @@ document.addEventListener('DOMContentLoaded', function() {
   width: 27%;
   height: 330px;
   position: relative;
+  z-index: 1;
+  cursor: pointer;
 }
 .choose-your-rig-section .rig-card.focused {
     transform: scale(1.1);
@@ -173,12 +166,8 @@ document.addEventListener('DOMContentLoaded', function() {
   font-weight: 400;
   color: #10111B;
 }
-.choose-your-rig-section .rig-link {
-  color: #10111B;
-  font-size: 1rem;
-  font-weight: 900;
+.choose-your-rig-section .rig-bold {
   position: absolute;
-  text-decoration: none;
   bottom: 15px;
   left: 15px;
 }
