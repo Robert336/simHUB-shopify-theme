@@ -2,7 +2,7 @@
   <div class="container">
     <h2 class="section-title">Choose Your Rig</h2>
     <div class="rig-cards">
-      <div class="rig-card" id="rig-1">
+      <div class="rig-card" id="0">
         <img src="{{ 'entry-thumb.png' | asset_url }}" alt="Entry Rig" width="100%" height="auto">
         <div class="rig-info">
           <h2>Entry</h2>
@@ -10,7 +10,7 @@
           <p class="rig-bold" style="font-weight: 900;">Click to view specs</p>
         </div>
       </div>
-      <div class="rig-card" id="rig-2">
+      <div class="rig-card" id="1">
         <img src="{{ 'inter-thumb.png' | asset_url }}" alt="Intermediate Rig" width="100%" height="auto">
         <div class="rig-info">
           <h2>Intermediate</h2>
@@ -18,7 +18,7 @@
           <p class="rig-bold" style="font-weight: 900;">Click to view specs</p>
         </div>
       </div>
-      <div class="rig-card" id="rig-3">
+      <div class="rig-card" id="2">
         <img src="{{ 'adv-thumb.png' | asset_url }}" alt="Advanced Rig" width="100%" height="auto">
         <div class="rig-info">
           <h2>Advanced</h2>
@@ -42,6 +42,25 @@ document.addEventListener('DOMContentLoaded', function() {
   var cardsContainer = document.querySelector('.rig-cards');
   var cards = Array.from(cardsContainer.children);
   let currentCardIndex = 1; 
+
+  cards.forEach((card, index) => {
+    card.addEventListener('click', function() {
+      let clickedRigId = parseInt(this.id, 10);
+
+      if ((clickedRigId === 0 && currentCardIndex === 1) ||
+          (clickedRigId === 1 && currentCardIndex === 2) ||
+          (clickedRigId === 2 && currentCardIndex === 0)) {
+        rotateCards('right');
+        currentCardIndex = currentCardIndex === 2 ? 0 : currentCardIndex + 1;
+      } else if ((clickedRigId === 2 && currentCardIndex === 1) ||
+                 (clickedRigId === 0 && currentCardIndex === 2) ||
+                 (clickedRigId === 1 && currentCardIndex === 0)) {
+        rotateCards('left');
+        currentCardIndex = currentCardIndex === 0 ? 2 : currentCardIndex - 1;
+      }
+      updateFocus();
+    });
+  });
 
   document.querySelector('.chevron-left').addEventListener('click', function() {
     rotateCards('left');
