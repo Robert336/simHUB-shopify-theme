@@ -1,0 +1,78 @@
+{{ 'section-testimonials.css' | asset_url |stylesheet_tag }}
+
+
+
+
+
+
+
+
+
+{% schema %}
+{
+  "name": "Testimonals Section"  ,
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "has_cta",
+      "default": true,
+      "label": "Show CTA below testimonials"
+    },
+    {
+      "type": "text",
+      "id": "cta_header",
+      "default": "Ready to give us a try?",
+      "label": "CTA Header"
+    },
+    {
+      "type": "text",
+      "id": "cta_subtitle",
+      "default": "Book a quick 30min or 1hr session!",
+      "label": "CTA Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "cta_button_label",
+      "default": "Book a Simulator",
+      "label": "Button Label"
+    }
+
+
+  ],
+  "blocks": [
+    {
+      "type": "testimonial_card",
+      "name": "Testimonial Card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name_short",
+          "label": "Name Short-form (3 letters)",
+          "default": "NAM"
+        },
+        {
+          "type": "text",
+          "id": "testimonial_body",
+          "label": "Testimonial Body Text",
+          "default": "\"Love this place, Stef is the best.\""
+        },
+        {
+          "type": "range",
+          "id": "rating",
+          "label": "Testimonial Rating",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "unit": "stars",
+          "default": 5
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
