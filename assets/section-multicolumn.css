@@ -20,7 +20,7 @@
 @media screen and (min-width: 750px) {
   .background-image {
     position: absolute;
-    opacity: 0.2;
+    opacity: 0.3;
     top: 0;
     left: 0;
     width: 100%;
@@ -40,6 +40,12 @@
     height: auto;
     display: block;
     max-width: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .background-image {
+    top: calc(-50%);
   }
 }
 
