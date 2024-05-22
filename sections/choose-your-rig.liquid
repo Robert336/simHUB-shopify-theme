@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
   cards.forEach((card, index) => {
     card.addEventListener('click', function() {
       let clickedRigId = parseInt(this.id, 10);
-
       if ((clickedRigId === 0 && currentCardIndex === 1) ||
           (clickedRigId === 1 && currentCardIndex === 2) ||
           (clickedRigId === 2 && currentCardIndex === 0)) {
@@ -57,6 +56,8 @@ document.addEventListener('DOMContentLoaded', function() {
                  (clickedRigId === 1 && currentCardIndex === 0)) {
         rotateCards('left');
         currentCardIndex = currentCardIndex === 0 ? 2 : currentCardIndex - 1;
+      } else {
+        return
       }
       updateFocus();
     });
@@ -151,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function() {
   gap: 40px;
 }
 .choose-your-rig-section .rig-card {
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
   background-color: #ffffff;
   border-radius: 8px;
   overflow: hidden;
@@ -175,6 +176,10 @@ document.addEventListener('DOMContentLoaded', function() {
   padding: 10px;
   padding-left: 15px;
   text-align: left;
+}
+.choose-your-rig-section .rig-card.focused:hover .rig-info {
+  height: 60%;
+  transition: height 0.5s ease-in;
 }
 .choose-your-rig-section .rig-info h2 {
   color: #10111B;
