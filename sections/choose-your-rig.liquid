@@ -61,8 +61,23 @@ document.addEventListener('DOMContentLoaded', function() {
           const rigInfoText = card.querySelector('.rig-bold');
           if(this.classList.contains('clicked')) {
             rigInfoText.textContent = 'Click to hide specs';
+            const rigSpecText = this.querySelector('.rig-spec');
+            if (index === 0){
+              rigSpecText.textContent = 'Best for those who want a taste of sim racing\n\nMonitor: Triple 32 Inch Curved Gaming Monitors\nWheel: Moza R9 Wheelbase\nPedals: 6 Sigma Custom Pedals\nChassis: 6s-160 Sim Racing Chassis'
+            } else if (index === 1){
+              rigSpecText.textContent = 'For the driver that wants to experience added realism from the help of basic motion technology\n\nMonitor: Triple 32 Inch Curved Gaming Monitors\nWheel: Moza R9 Wheelbase\nPedals: 6 Sigma Custom Pedals\nChassis: 6s-4DOF Motion Sim Racing Chassis'
+            } else if (index === 2){
+              rigSpecText.textContent = 'Top-of-the-line motion simulation technology\n\nMonitor: Triple 32 Inch Curved Gaming Monitors\nWheel: Moza R21 Wheelbase\nPedals: 6 Sigma Custom Pedals\nChassis: 6s-6DOF Full Motion Sim Racing Chassis\nAccessories: Moza HGP Shifter, Moza HBP Handbrake'
+            }
           } else {
             rigInfoText.textContent = 'Click to view specs';
+            if (index === 0){ 
+              rigSpecText.textContent = 'Best for those who want a taste of sim racing'
+            } else if (index === 1){
+              rigSpecText.textContent = 'For the driver that wants to experience added realism from the help of basic motion technology'
+            } else if (index === 2){
+              rigSpecText.textContent = 'Top-of-the-line motion simulation technology'
+            }
           }
       }
       updateFocus();
