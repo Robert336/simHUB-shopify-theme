@@ -174,6 +174,50 @@
         "padding_bottom": 36
       }
     },
+    "testimonials_BHLJnT": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_card_dt94rj": {
+          "type": "testimonial_card",
+          "settings": {
+            "color": "#3f4ba0",
+            "name_short": "NAM",
+            "testimonial_body": "“Love this place, Stef is the best. Super friendly and doesn’t just make sure you have fun and ending your time but he also ensures you improve lap times. Suffice to say you leave a better driver and a satisfied customer. Will be returning soon!”",
+            "rating": 5
+          }
+        },
+        "testimonial_card_deUjBQ": {
+          "type": "testimonial_card",
+          "settings": {
+            "color": "#db2821",
+            "name_short": "NAM",
+            "testimonial_body": "“Needless to say, I had an excellent experience at the SimHUB and would highly recommend anyone to go there to chill, check out their awesome motion sim rigs, see cool cars, join their training classes, purchase sim gear and experience this one of a kind place!”",
+            "rating": 5
+          }
+        },
+        "testimonial_card_UYn98e": {
+          "type": "testimonial_card",
+          "settings": {
+            "color": "#ffa400",
+            "name_short": "NAM",
+            "testimonial_body": "“Great place if you're a car enthusiast looking to get the closest experience to being in a real racecar. Experience is great for both new and experienced sim racers. Customer service is fantastic with tons of knowledge about sim racing and real-life racing. Must-go if you're into cars!”",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_card_dt94rj",
+        "testimonial_card_deUjBQ",
+        "testimonial_card_UYn98e"
+      ],
+      "settings": {
+        "has_cta": true,
+        "cta_header": "Ready to give us a try?",
+        "cta_subtitle": "Book a quick 30min or 1hr session!",
+        "cta_button_label": "Book a Simulator",
+        "cta_button_link": ""
+      }
+    },
     "collapsible_content_mcMBz9": {
       "type": "collapsible-content",
       "blocks": {
@@ -241,6 +285,7 @@
     "multicolumn_fzwEgU",
     "choose_your_rig_eMpTLb",
     "multicolumn_HkaRAQ",
+    "testimonials_BHLJnT",
     "collapsible_content_mcMBz9"
   ]
 }

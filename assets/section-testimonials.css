@@ -38,6 +38,7 @@
   /* flex-wrap: wrap; */
   justify-content: space-around;
   overflow-x: scroll;
+  scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
 }
 
