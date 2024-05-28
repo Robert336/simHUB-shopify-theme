@@ -153,7 +153,8 @@
       ],
       "custom_css": [
         ".multicolumn .title {color: white;}",
-        ".multicolumn-card {opacity: 0.7;}"
+        ".multicolumn-card {opacity: 0.7;}",
+        ".multicolumn > div {background-color: #1D1F2D;}"
       ],
       "settings": {
         "background_image": "shopify:\/\/shop_images\/2022-12-07-18-25-51_0.png",
