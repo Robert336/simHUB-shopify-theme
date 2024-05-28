@@ -1,0 +1,156 @@
+{{ 'section-testimonials.css' | asset_url |stylesheet_tag }}
+
+<div class="section">
+  <div class="testimonials-section page-width">
+    {% for block in section.blocks %}
+      <div class="testimonial-card" style="border-top: 10px solid {{ block.settings.color }};">
+        <div class="testimonial-header">
+          <h3 class="name">Customer Radio</h3>
+        </div>
+        <div class="radio-wave-container" style="fill: {{ block.settings.color }};">
+          {% render 'radio-waves' %}
+        </div>
+        <div class="testimonial-header">
+          <div class="color-box" style="background-color: {{ block.settings.color }};">
+          </div>
+          <h3 class="name">
+            {{ block.settings.name_short }}
+          </h3>
+        </div>
+        <div class="crew-chief-wrapper">
+          {% render 'icon-crew-chief' %}
+        </div>
+        <div class="testimonial-content">
+          <p class="testimonial-body">{{ block.settings.testimonial_body }}</p>
+        </div>
+        {% comment %} <div class="dashed-border-wrapper">
+          {% render 'testimonial-border' %}  
+        </div> {% endcomment %}
+        <div class="testimonial-rating-container">
+          {% for star in (1..block.settings.rating) %}
+            {% render 'icon-star' %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="cta-container">
+    <div class="cta-section">
+      <h1 class="cta-header">Ready to give us a try?</h1>
+      <p>Book a quick 30min or 1hr session!</p>
+      {%- if section.settings.cta_button_label != blank -%}
+        <a
+          class="button button--primary color-scheme-3"
+          {% if section.settings.cta_button_link == blank %}
+            role="link" aria-disabled="true"
+          {% else %}
+            href="{{ section.settings.cta_button_link }}"
+          {% endif %}
+        >
+          {{ section.settings.cta_button_label | escape }}
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+{% schema %}
+{
+  "name": "Testimonals Section"  ,
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "has_cta",
+      "default": true,
+      "label": "Show CTA below testimonials"
+    },
+    {
+      "type": "text",
+      "id": "cta_header",
+      "default": "Ready to give us a try?",
+      "label": "CTA Header"
+    },
+    {
+      "type": "text",
+      "id": "cta_subtitle",
+      "default": "Book a quick 30min or 1hr session!",
+      "label": "CTA Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "cta_button_label",
+      "default": "Book a Simulator",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "cta_button_link",
+      "label": "Button Link"
+    }
+
+
+  ],
+  "blocks": [
+    {
+      "type": "testimonial_card",
+      "name": "Testimonial Card",
+      "settings": [
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Color"
+        },
+        {
+          "type": "text",
+          "id": "name_short",
+          "label": "Name Short-form (3 letters)",
+          "default": "NAM"
+        },
+        {
+          "type": "text",
+          "id": "testimonial_body",
+          "label": "Testimonial Body Text",
+          "default": "\"Love this place, Stef is the best.\""
+        },
+        {
+          "type": "range",
+          "id": "rating",
+          "label": "Testimonial Rating",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "unit": "str",
+          "default": 5
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials",
+      "blocks": [
+        {
+          "type": "testimonial_card"
+        },
+        {
+          "type": "testimonial_card"
+        },
+        {
+          "type": "testimonial_card"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
