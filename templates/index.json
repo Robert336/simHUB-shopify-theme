@@ -120,6 +120,40 @@
     },
     "choose_your_rig_eMpTLb": {
       "type": "choose-your-rig",
+      "blocks": {
+        "card_A3FhDD": {
+          "type": "card",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/entry-rig-vid.mp4",
+            "title": "Entry",
+            "subtitle": "Best for those who want a taste of sim racing",
+            "extra_specs": "<p>Monitor: Triple 32’’ Curved Monitors or single 48” Curved Monitor<\/p><p>Wheel: Moza R9 Wheelbase<\/p><p>Pedals: 6 Sigma Custom Pedals<\/p><p>Chassis: 6s-160 Sim Racing Chassis<\/p><p>Accessories: N\/A<\/p>"
+          }
+        },
+        "card_GKPqGT": {
+          "type": "card",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/inter-rig-vid.mp4",
+            "title": "Intermediate",
+            "subtitle": "For the driver that wants to experience added realism from the help of basic motion technology",
+            "extra_specs": "<p>Monitor: Triple 32’’ Curved Monitors<\/p><p>Wheel: Moza R9 Wheelbase<\/p><p>Pedals: 6 Sigma Custom Pedals<\/p><p>Chassis: 6s- 4DOF Motion Sim Racing Chassis<\/p><p>Accessories: N\/A<\/p>"
+          }
+        },
+        "card_fq6Nfh": {
+          "type": "card",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/adv-rig-vid.mp4",
+            "title": "Advanced",
+            "subtitle": "Top-of-the-line motion simulation technology for the highest level of driving realism, delivering 3 times more motion range than the intermediate level",
+            "extra_specs": "<p>Monitor: Triple 32’’ Monitors<\/p><p>Wheel: Moza R21 Wheelbase<\/p><p>Pedals: 6 Sigma Custom Pedals<\/p><p>Chassis: 6s-6DOF Full Motion Sim Racing Chassis<\/p><p>Accessories: Moza HGP Shifter, Moza HBP Handbrake<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "card_A3FhDD",
+        "card_GKPqGT",
+        "card_fq6Nfh"
+      ],
       "settings": {
       }
     },
@@ -154,7 +188,7 @@
       "custom_css": [
         ".multicolumn .title {color: white;}",
         ".multicolumn-card {opacity: 0.7;}",
-        ".multicolumn > div {background-color: #1D1F2D;}"
+        ".multicolumn > div {background-color: #1d1f2d;}"
       ],
       "settings": {
         "background_image": "shopify:\/\/shop_images\/2022-12-07-18-25-51_0.png",

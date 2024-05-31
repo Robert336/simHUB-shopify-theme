@@ -64,6 +64,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/icon-dollar-sign.svg",
             "title": "Prize Pool",
+            "title_size": "h2",
             "text": "<p>Get rewarded for your skills and dedication with prizes every season.<\/p>",
             "link_label": "",
             "link": ""
@@ -74,6 +75,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/racing-icon.svg",
             "title": "Competitive Racing",
+            "title_size": "h2",
             "text": "<p>Ensure wheel-to-wheel racing by joining a skill group that matches your pace.<\/p>",
             "link_label": "",
             "link": ""
@@ -84,6 +86,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/icon-users.svg",
             "title": "Community",
+            "title_size": "h2",
             "text": "<p>Join a community of like-minded racing enthusiasts and make some new sim-racing friends.<\/p>",
             "link_label": "",
             "link": ""
@@ -100,6 +103,7 @@
       ],
       "settings": {
         "title": "Why Join Our League?",
+        "heading_align": "center",
         "heading_size": "h1",
         "image_width": "third",
         "image_ratio": "adapt",
@@ -123,6 +127,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/icon-number-01.svg",
             "title": "Sign up",
+            "title_size": "h2",
             "text": "<p>Sign up for the upcoming season and pay the entry fee<\/p>",
             "link_label": "",
             "link": ""
@@ -133,6 +138,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/icon-number-02.svg",
             "title": "Select Skill Group",
+            "title_size": "h2",
             "text": "<p>Choose between the Rookie or Experienced skill groups based on your pace<\/p>",
             "link_label": "",
             "link": ""
@@ -143,6 +149,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/icon-number-03.svg",
             "title": "Compete",
+            "title_size": "h2",
             "text": "<p>Come in on your skill group’s designated race day for 10 weeks<\/p>",
             "link_label": "",
             "link": ""
@@ -156,12 +163,13 @@
       ],
       "custom_css": [
         ".multicolumn-card__image-wrapper--third-width {width: 15%;}",
-        ".multicolumn-card {background-color: white;}",
+        ".multicolumn-card {padding-top: 25px; background-color: white;}",
         ".multicolumn-card h2,h3 {color: #3f4ba0;}",
         ".multicolumn-card p {color: black;}"
       ],
       "settings": {
         "title": "How Does It Work?",
+        "heading_align": "center",
         "heading_size": "h1",
         "image_width": "third",
         "image_ratio": "adapt",
@@ -184,6 +192,7 @@
           "type": "column",
           "settings": {
             "title": "Car Class:",
+            "title_size": "h2",
             "text": "<h2>GT3<\/h2>",
             "link_label": "",
             "link": ""
@@ -193,6 +202,7 @@
           "type": "column",
           "settings": {
             "title": "Practice Duration:",
+            "title_size": "h2",
             "text": "<h2>## mins<\/h2>",
             "link_label": "",
             "link": ""
@@ -202,6 +212,7 @@
           "type": "column",
           "settings": {
             "title": "Race Duration:",
+            "title_size": "h2",
             "text": "<h2>## mins<\/h2>",
             "link_label": "",
             "link": ""
@@ -211,6 +222,7 @@
           "type": "column",
           "settings": {
             "title": "Race Duration:",
+            "title_size": "h2",
             "text": "<h2>## mins<\/h2>",
             "link_label": "",
             "link": ""
@@ -229,6 +241,7 @@
       ],
       "settings": {
         "title": "",
+        "heading_align": "center",
         "heading_size": "h1",
         "image_width": "third",
         "image_ratio": "adapt",
@@ -251,6 +264,7 @@
           "type": "column",
           "settings": {
             "title": "Rookie Group",
+            "title_size": "h2",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
@@ -260,6 +274,7 @@
           "type": "column",
           "settings": {
             "title": "Experienced Group",
+            "title_size": "h2",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
@@ -272,6 +287,7 @@
       ],
       "settings": {
         "title": "Season Schedule",
+        "heading_align": "center",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -294,6 +310,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
+            "title_size": "h2",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
@@ -305,6 +322,7 @@
       ],
       "settings": {
         "title": "Pricing",
+        "heading_align": "center",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
