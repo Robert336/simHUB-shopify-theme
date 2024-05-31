@@ -154,6 +154,9 @@
         "card_GKPqGT",
         "card_fq6Nfh"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
       }
     },
@@ -188,7 +191,7 @@
       "custom_css": [
         ".multicolumn .title {color: white;}",
         ".multicolumn-card {opacity: 0.7;}",
-        ".multicolumn > div {background-color: #1d1f2d;}"
+        "@media screen and (max-width: 749px) {.multicolumn > div {background-color: #1d1f2d; }}"
       ],
       "settings": {
         "background_image": "shopify:\/\/shop_images\/2022-12-07-18-25-51_0.png",
