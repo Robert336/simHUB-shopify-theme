@@ -1,0 +1,128 @@
+
+
+
+
+
+
+
+
+{% schema %}
+{
+  "name": "Pricing Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Pricing"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Section Subitle",
+      "default": ""
+    }
+    
+  ],
+  "blocks": [
+    {
+      "type": "pricing_card",
+      "name": "Pricing Card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Offer Title"
+        },
+        {
+          "type": "textarea",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "Subtitle here"
+        },
+        {
+          "type": "textarea",
+          "id": "details",
+          "label": "Details",
+          "default": "Includes:\n- Access to all simulators\n- Lounge area with TV and games\n- Food and drink allowed"
+        },
+        {
+          "type": "text",
+          "id": "price_unit",
+          "label": "Price Unit (e.g. /hour)",
+          "default": "/hour"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link",
+          "default": "#"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Book now"
+        },
+        {
+          "type": "text",
+          "id": "note",
+          "label": "Note",
+          "default": "Minimum time of 1 hour"
+        }
+      ]
+    },
+    {
+      "type": "pricing_card_2",
+      "name": "Pricing Card 2 Prices",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Offer Title"
+        },
+        {
+          "type": "text",
+          "id": "price_unit_1",
+          "label": "Price Unit 1 (e.g. /hour)",
+          "default": "/hour"
+        },
+        {
+          "type": "text",
+          "id": "price_unit_2",
+          "label": "Price Unit 2 (e.g. /hour)",
+          "default": "/half-hour"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link",
+          "default": "#"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Book now"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Pricing Section",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "pricing_card"
+        },
+        {
+          "type": "pricing_card"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
