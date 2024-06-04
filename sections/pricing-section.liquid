@@ -1,14 +1,78 @@
+{{ "section-pricing.css" | asset_url | stylesheet_tag }}
 
 
+<div class="pricing-section">
+  <h1 style="color: {{ section.settings.title_color }};">{{ section.settings.title }}</h1>
+  <p style="color: {{ section.settings.title_color }};"> {{ section.settings.subtitle }}</p>
+  <div class="card-container">
+    {% for block in section.blocks %}
 
-
-
+      {% if block.type == "pricing_card_2" %}
+        <div class="pricing-card fit">
+          <div class="title-container center">
+            <h2>{{ block.settings.title }}</h2>
+          </div>
+          <div class="content-container">
+            <div class="price-container">
+              <div class="price center">
+                {{ block.settings.product_option_1.price | money | remove: '.00'}}
+                <span class="price-unit">
+                  {{ block.settings.price_unit_1 }}
+                </span>
+              </div>
+            </div>
+            <div class="divider">
+              <hr style="margin-top: 10px; margin-bottom:10px; width: 50%;">
+              <p style="margin: 5px;">or</p>
+              <hr style="margin-top: 10px; margin-bottom:10px; width: 50%;">
+            </div>
+            <div class="price-container">
+              <div class="price center">
+                {{ block.settings.product_option_2.price | money | remove: '.00'}}
+                <span class="price-unit">
+                  {{ block.settings.price_unit_2 }}
+                </span>
+              </div>
+            </div>
+            <button href="{{ block.settings.button_link }}" class="button">{{ block.settings.button_text }}</button>
+          </div>
+        </div>
+      {% else %}
+        <div class="pricing-card">
+          <div class="title-container">
+            <h2>{{ block.settings.title }}</h2>
+            <p class="card-subtitle">{{ block.settings.subtitle }}</p>
+          </div>
+          <div class="content-container">
+            <div class="details-container">
+              <p class="details-content-header">Includes:</p>
+              <div class="details">{{ block.settings.details | newline_to_br }}</div>
+            </div>
+            <div class="pricing-cta-container">
+              <div class="price-container">
+                <div class="price">
+                  {{ block.settings.product.price | money | remove: '.00'}}
+                  <span class="price-unit">
+                    {{ block.settings.price_unit }}
+                  </span>
+                </div>
+              </div>
+              <button href="{{ block.settings.button_link }}" class="button">{{ block.settings.button_text }}</button>
+              <div class="note">{{ block.settings.note }}</div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
 
 
 
 {% schema %}
 {
   "name": "Pricing Section",
+  "class": "section",
   "settings": [
     {
       "type": "text",
@@ -20,7 +84,13 @@
       "type": "text",
       "id": "subtitle",
       "label": "Section Subitle",
-      "default": ""
+      "default": "subtitle"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Section Title Color",
+      "default": "#FFFF"
     }
     
   ],
@@ -36,40 +106,34 @@
           "default": "Offer Title"
         },
         {
-          "type": "textarea",
+          "type": "text",
           "id": "subtitle",
-          "label": "Subtitle",
-          "default": "Subtitle here"
+          "label": "Subtitle"
         },
         {
-          "type": "textarea",
+          "type": "richtext",
           "id": "details",
-          "label": "Details",
-          "default": "Includes:\n- Access to all simulators\n- Lounge area with TV and games\n- Food and drink allowed"
+          "label": "Details"
         },
         {
           "type": "text",
           "id": "price_unit",
-          "label": "Price Unit (e.g. /hour)",
-          "default": "/hour"
+          "label": "Price Unit (e.g. /hour)"
         },
         {
-          "type": "url",
-          "id": "button_link",
-          "label": "Button Link",
-          "default": "#"
+          "type": "product",
+          "id": "product",
+          "label": "Product"
         },
         {
           "type": "text",
           "id": "button_text",
-          "label": "Button Text",
-          "default": "Book now"
+          "label": "Button Text"
         },
         {
           "type": "text",
           "id": "note",
-          "label": "Note",
-          "default": "Minimum time of 1 hour"
+          "label": "Note"
         }
       ]
     },
@@ -82,6 +146,16 @@
           "id": "title",
           "label": "Title",
           "default": "Offer Title"
+        },
+        {
+          "type": "product",
+          "id": "product_option_1",
+          "label": "Product Option 1"
+        },
+        {
+          "type": "product",
+          "id": "product_option_2",
+          "label": "Product Option 2"
         },
         {
           "type": "text",
@@ -98,8 +172,7 @@
         {
           "type": "url",
           "id": "button_link",
-          "label": "Button Link",
-          "default": "#"
+          "label": "Button Link"
         },
         {
           "type": "text",
@@ -113,11 +186,7 @@
   "presets": [
     {
       "name": "Pricing Section",
-      "category": "Custom",
       "blocks": [
-        {
-          "type": "pricing_card"
-        },
         {
           "type": "pricing_card"
         }
