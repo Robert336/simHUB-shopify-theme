@@ -11,21 +11,50 @@
             "show_social": true
           }
         },
-        "link_list_z6jDER": {
+        "text_bRc6DL": {
+          "type": "text",
+          "settings": {
+            "heading": "Products",
+            "subtext": "<p>Coming soon...<\/p>"
+          }
+        },
+        "link_list_6tdtHN": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "heading": "Services",
+            "menu": "services"
+          }
+        },
+        "link_list_EMbfKV": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Help",
+            "menu": "help"
+          }
+        },
+        "text_AWmyy7": {
+          "type": "text",
+          "settings": {
+            "heading": "Contact",
+            "subtext": "<p>101A Freshway Drive unit 3, Vaughan, ON, Canada<\/p><p>Call (647) 528-7258<\/p><p>racesimhub@gmail.com<\/p>"
           }
         }
       },
       "block_order": [
         "brand_information_L7QMmf",
-        "link_list_z6jDER"
+        "text_bRc6DL",
+        "link_list_6tdtHN",
+        "link_list_EMbfKV",
+        "text_AWmyy7"
+      ],
+      "custom_css": [
+        ".grid__item {flex-shrink: 1;}",
+        ".grid__item li,p {font-size: 12px;}",
+        ".grid {flex-wrap: nowrap;}"
       ],
       "settings": {
         "color_scheme": "scheme-4",
-        "newsletter_enable": true,
+        "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": true,
         "show_social": true,

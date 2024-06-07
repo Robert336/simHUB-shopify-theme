@@ -303,39 +303,29 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn_qqdygh": {
-      "type": "multicolumn",
+    "pricing_section_G6CJUj": {
+      "type": "pricing-section",
       "blocks": {
-        "column_k79fn3": {
-          "type": "column",
+        "pricing_card_ar4KpU": {
+          "type": "pricing_card",
           "settings": {
-            "title": "Column",
-            "title_size": "h2",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "Season Entry",
+            "subtitle": "Entry into the next season",
+            "details": "<ul><li>## weeks of league racing<\/li><li>## hours of sim time<\/li><li>50% off additional sim time<\/li><\/ul>",
+            "price_unit": "\/person",
+            "product": "league-racing-entry-ticket",
+            "button_text": "Join",
+            "note": ""
           }
         }
       },
       "block_order": [
-        "column_k79fn3"
+        "pricing_card_ar4KpU"
       ],
       "settings": {
         "title": "Pricing",
-        "heading_align": "center",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 1,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "subtitle": "",
+        "title_color": ""
       }
     }
   },
@@ -346,6 +336,6 @@
     "multicolumn_UUxRjy",
     "multicolumn_bYRWYH",
     "multicolumn_7RV4ma",
-    "multicolumn_qqdygh"
+    "pricing_section_G6CJUj"
   ]
 }

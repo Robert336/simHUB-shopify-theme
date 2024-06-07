@@ -21,7 +21,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Call us (647) 528-7258",
-            "button_link_1": "",
+            "button_link_1": "tel:647-528-7258",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -78,6 +78,9 @@
         "heading_wLMwd3",
         "text_8hHYPA"
       ],
+      "custom_css": [
+        ".image-with-text__media {border-radius: 8px;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/file_1.jpg",
         "height": "small",
@@ -116,7 +119,11 @@
         "heading_DiCYRK",
         "text_icgBHa"
       ],
+      "custom_css": [
+        ".image-with-text__media {border-radius: 8px;}"
+      ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/file.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -130,12 +137,51 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "pricing_section_RWqWG8": {
+      "type": "pricing-section",
+      "blocks": {
+        "pricing_card_CUxTTa": {
+          "type": "pricing_card",
+          "settings": {
+            "title": "In-House Event",
+            "subtitle": "Rent our space",
+            "details": "<ul><li>Access to all simulators<\/li><li>Lounge area with TV and games<\/li><li>Food and drink allowed<\/li><\/ul>",
+            "price_unit": "\/hour",
+            "product": "event-test",
+            "button_text": "Book now",
+            "note": "Minimum time of 1 hour"
+          }
+        },
+        "pricing_card_mka63K": {
+          "type": "pricing_card",
+          "settings": {
+            "title": "Off-Site Event",
+            "subtitle": "We bring simulators to you",
+            "details": "<ul><li>Delivery to your venue<\/li><li>On-site support<\/li><\/ul>",
+            "price_unit": "Contact us for pricing",
+            "product": "",
+            "button_text": "Contact us",
+            "note": ""
+          }
+        }
+      },
+      "block_order": [
+        "pricing_card_CUxTTa",
+        "pricing_card_mka63K"
+      ],
+      "settings": {
+        "title": "Pricing",
+        "subtitle": "Choose your type of event",
+        "title_color": ""
+      }
     }
   },
   "order": [
     "image_banner_t86aNw",
     "main",
     "image_with_text_dR4txw",
-    "image_with_text_HjjDe8"
+    "image_with_text_HjjDe8",
+    "pricing_section_RWqWG8"
   ]
 }

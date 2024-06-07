@@ -1,0 +1,298 @@
+{
+  "sections": {
+    "image_banner_t86aNw": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_UPRhXd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Book a Simulator",
+            "heading_size": "h0"
+          }
+        },
+        "text_96WQFJ": {
+          "type": "text",
+          "settings": {
+            "text": "Book a 30 minute or 1 hour session on any of our simulators",
+            "text_style": "body"
+          }
+        },
+        "buttons_ybrpVG": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Book a Simulator",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_UPRhXd",
+        "text_96WQFJ",
+        "buttons_ybrpVG"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/file_2.jpg",
+        "image_overlay_opacity": 60,
+        "image_height": "small",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-4",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "multicolumn_hGFxhb": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_wcR7E6": {
+          "type": "column",
+          "settings": {
+            "title": "Entry",
+            "title_size": "h2",
+            "text": "<p>Best for those who want a taste of sim racing<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_tLMKtT": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "title_size": "h2",
+            "text": "<p>For the driver that wants to experience added realism from the help of basic motion technology<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_HdpDHY": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "title_size": "h2",
+            "text": "<p>Top-of-the-line motion simulation technology for the highest level of driving realism, delivering 3 times more motion range than the intermediate level<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_wcR7E6",
+        "column_tLMKtT",
+        "column_HdpDHY"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_align": "center",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_HJXhtG": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_r7mRMK": {
+          "type": "column",
+          "settings": {
+            "title": "Time Attack",
+            "title_size": "h2",
+            "text": "<p>Race against the clock to set fastest laps and climb the leaderboard<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Nw9tQd": {
+          "type": "column",
+          "settings": {
+            "title": "Race AI",
+            "title_size": "h2",
+            "text": "<p>Race in a grid of AI in any car & track combo<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Hz6JgK": {
+          "type": "column",
+          "settings": {
+            "title": "Race Friends",
+            "title_size": "h2",
+            "text": "<p>Book multiple sims and race your friends<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_r7mRMK",
+        "column_Nw9tQd",
+        "column_Hz6JgK"
+      ],
+      "custom_css": [
+        ".multicolumn-card {background-color: #f5f7ff;}"
+      ],
+      "settings": {
+        "title": "Make the most of your session",
+        "heading_align": "center",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-a3d51449-121f-458a-b6a5-408e5a166d57",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_xiJae6": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_Uip3bx": {
+          "type": "column",
+          "settings": {
+            "title": "Entry",
+            "title_size": "h2",
+            "text": "<p>Monitor: Triple 32’’ Curved Monitors or single 48” Curved Monitor<\/p><p>Wheel: Moza R9 Wheelbase<\/p><p>Pedals: 6 Sigma Custom Pedals<\/p><p>Chassis: 6s-160 Sim Racing Chassis<\/p><p>Accessories: N\/A<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_XMXjP7": {
+          "type": "column",
+          "settings": {
+            "title": "Intermediate",
+            "title_size": "h2",
+            "text": "<p>Monitor: Triple 32’’ Curved Monitors<\/p><p>Wheel: Moza R9 Wheelbase<\/p><p>Pedals: 6 Sigma Custom Pedals<\/p><p>Chassis: 6s- 4DOF Motion Sim Racing Chassis<\/p><p>Accessories: N\/A<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_pCaDVp": {
+          "type": "column",
+          "settings": {
+            "title": "Advanced",
+            "title_size": "h2",
+            "text": "<p>Monitor: Triple 32’’ Monitors<\/p><p>Wheel: Moza R21 Wheelbase<\/p><p>Pedals: 6 Sigma Custom Pedals<\/p><p>Chassis: 6s-6DOF Full Motion Sim Racing Chassis<\/p><p>Accessories: Moza HGP Shifter, Moza HBP Handbrake<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Uip3bx",
+        "column_XMXjP7",
+        "column_pCaDVp"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info {text-align: left;}",
+        ".rte {text-align: left;}"
+      ],
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/file_2.jpg",
+        "title": "Simulator Tech Specs",
+        "heading_align": "center",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-4",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "pricing_section_YnreBf": {
+      "type": "pricing-section",
+      "blocks": {
+        "pricing_card_2_KqHFaJ": {
+          "type": "pricing_card_2",
+          "settings": {
+            "title": "Entry",
+            "product_option_1": "copy-of-entry-level-60mins",
+            "product_option_2": "entry-level",
+            "price_unit_1": "\/hour",
+            "price_unit_2": "\/half-hour",
+            "button_link": "shopify:\/\/collections\/entry",
+            "button_text": "Book now"
+          }
+        },
+        "pricing_card_2_cRw6VQ": {
+          "type": "pricing_card_2",
+          "settings": {
+            "title": "Intermediate",
+            "product_option_1": "intermediate-level-60mins",
+            "product_option_2": "intermediate-level",
+            "price_unit_1": "\/hour",
+            "price_unit_2": "\/half-hour",
+            "button_link": "shopify:\/\/collections\/intermediate",
+            "button_text": "Book now"
+          }
+        },
+        "pricing_card_2_QB4Agx": {
+          "type": "pricing_card_2",
+          "settings": {
+            "title": "Advanced",
+            "product_option_1": "elite-level-60mins",
+            "product_option_2": "elite-level",
+            "price_unit_1": "\/hour",
+            "price_unit_2": "\/half-hour",
+            "button_link": "shopify:\/\/collections\/advanced",
+            "button_text": "Book now"
+          }
+        }
+      },
+      "block_order": [
+        "pricing_card_2_KqHFaJ",
+        "pricing_card_2_cRw6VQ",
+        "pricing_card_2_QB4Agx"
+      ],
+      "settings": {
+        "title": "Pricing",
+        "subtitle": "",
+        "title_color": ""
+      }
+    }
+  },
+  "order": [
+    "image_banner_t86aNw",
+    "main",
+    "multicolumn_hGFxhb",
+    "multicolumn_HJXhtG",
+    "multicolumn_xiJae6",
+    "pricing_section_YnreBf"
+  ]
+}

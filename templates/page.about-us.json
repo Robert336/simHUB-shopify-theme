@@ -1,0 +1,122 @@
+{
+  "sections": {
+    "image_banner_t86aNw": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_UPRhXd": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Us",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UPRhXd"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/file_1.jpg",
+        "image_overlay_opacity": 60,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_with_text_dR4txw": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_wLMwd3": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Our Mission<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_8hHYPA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At SimHub Race Lounge we're driven by a passion for precision, speed, and the thrill of the race. Our mission is to provide enthusiasts and novices alike with an unparalleled immersive experience in the world of motorsport. Through cutting-edge technology, realistic simulations, and a vibrant community atmosphere, we aim to ignite the competitive spirit within every visitor. Whether you're a seasoned racer seeking to hone your skills or a newcomer eager to feel the adrenaline rush of the track, our lounge is your ultimate destination. Come join us as we redefine the limits of virtual racing and create unforgettable moments behind the wheel.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wLMwd3",
+        "text_8hHYPA"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/file_1.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_HjjDe8": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_DiCYRK": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Founder Story<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_icgBHa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Meet Stefano Lucente, the founder of SimHub Race Lounge. His story began on a go-kart track over 13 years ago, where he fell in love with racing and motorsport indefinitely. Through many exciting and fierce competitions, Stefano wanted to be able to share his experience with fellow enthusiasts and create an adrenaline rush in a fun environment at an affordable cost. With a sim racing lounge in site, Stefano put in all his effort and resources to convert an old performance shop into what is now known as, SimHub Race Lounge. Countless late nights were spent fine-tuning the simulations, calibrating the equipment, and crafting the perfect racing ambiance. Stefano's vision was to build more than just a lounge; he wanted to cultivate a community where rookies could learn from veterans, friendships could flourish, and rivalries could ignite. Pushing the boundaries of realism and innovation, SimHub Race Lounge isn't just a place to hang out- it's a testament to Stefano's relentless pursuit of the ultimate racing experience.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DiCYRK",
+        "text_icgBHa"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/file_1.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-3",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner_t86aNw",
+    "main",
+    "image_with_text_dR4txw",
+    "image_with_text_HjjDe8"
+  ]
+}
