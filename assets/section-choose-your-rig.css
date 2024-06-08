@@ -67,7 +67,8 @@
   cursor: pointer;
   width: 80vw;
   max-width: 400px;
-  height: 500px;
+  min-height: 500px;
+  height: 100%;
 
 }
 
@@ -86,6 +87,7 @@
   .choose-your-rig-section .rig-card {
     width: 33%;
     flex-shrink: 1;
+    
   }
   
 }
@@ -114,8 +116,9 @@
   padding-right: 32px;
   padding-top: 20px;
   text-align: left;
-
+  flex-grow: 1;
 }
+
 .choose-your-rig-section .rig-card.focused.clicked .rig-info {
   height: 85%;
   overflow: auto;
