@@ -6,6 +6,8 @@
   justify-content: start;
   align-items: center;
   width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .pricing-section > h1 {
@@ -99,6 +101,7 @@
 .card-container .pricing-cta-container {
   display: flex;
   flex-direction: column;
+  justify-content: end;
   height: 150px;
 }
 
@@ -128,6 +131,7 @@
   margin-top: 10px;
   color: #777;
   text-align: center;
+
 }
 
 .card-container .divider {
