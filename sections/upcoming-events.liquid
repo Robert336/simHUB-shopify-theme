@@ -1,0 +1,177 @@
+
+{{ 'section-upcoming-events.css' | asset_url | stylesheet_tag }}
+
+<div class="section">
+  <h1 style="text-align: center; color: {{ section.settings.title_color }};">{{ section.settings.title }}</h1>
+  <div class="events-container" id="events-container">
+    {% comment %} <div class="event-card">
+      <div class="card-header">
+        <h2 class="date">April 12</h2>
+        <h3 class="event-title">League Racing: Season 1, Round 1 - Imola</h3>
+        <p class="dayWithTime">Wed, 12:00 PM - 2:30 PM</p>
+        <p class="location">
+          <span class="icon icon-map-pin">{%- render 'icon-map-pin' -%}</span>101A Freshway Drive unit 3, Vaughan, ON
+        </p>
+      </div>
+        <p id="description" class="description ellipsis">Short description can go here if you have extra details that someone would want to know. There is also a drop-down if the description is too long.
+        You can add links in here, and whatever important info you want.</p>
+      <button class=" chevron-button button button--secondary" onclick="toggleDesc(this)">{%- render 'icon-chevron-down' -%}</button>
+    </div> {% endcomment %}
+  </div>
+</div>
+
+<script>
+  function toggleDesc(element){
+
+    const eventCard = element.closest('.event-card');
+    const eventDesc = eventCard.querySelector('#description');
+
+    console.log(eventCard);
+    console.log(eventDesc);
+
+    element.classList.toggle('point-up')
+
+    if (eventCard.classList.contains('open')) {
+      // close the card
+      eventCard.classList.remove('open');
+      eventDesc.classList.add('ellipsis');
+    } else {
+      // open the card
+      eventCard.classList.add('open');
+      eventDesc.classList.remove('ellipsis');
+    }
+  }
+
+</script>
+
+<script>
+  // the API request origin is set to simhubrl.ca and simhubrl.myshopify.com
+  const CAL_KEY = '{{ section.settings.cal_key }}';
+  const CAL_ID = '{{ section.settings.cal_id }}';
+  const url = `https://www.googleapis.com/calendar/v3/calendars/${CAL_ID}/events?key=${CAL_KEY}`;
+  console.log("this also runs.")
+
+  
+
+  /*
+    Data to extract:
+    Date: string 'Month Day' format
+    Title: string
+    Weekday/Time: string 'Day, 00:00 - 00:00' format
+    Location: string
+    Description: string
+  
+  */
+  fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                const events = data.items;
+                events.forEach(event => {
+
+                  const startDate = new Date(event.start.dateTime === undefined ? event.start.date : event.start.dateTime);
+                  const endDate = new Date(event.end.dateTime === undefined ? event.end.date : event.end.dateTime);
+
+                  let formattedTimeStr = '';
+                  let formattedDateStr = '';
+
+                  if (event.start.date === undefined) {
+                    // This is not an all-day event then event.date will be undefined.
+                    formattedTimeStr = `
+                      ${startDate.toLocaleDateString('en-US', { weekday: 'short' })}, ${startDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}
+                      - ${endDate.toLocaleDateString('en-US', { weekday: 'short' })}, ${endDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}
+                    `;
+                  } else {
+                    formattedTimeStr = 'All-day'
+                  }
+
+                  // formatting the Date String like 'Apr 10 - Jun 12' or just 'April 10'
+                  if (startDate.toDateString() !== endDate.toDateString()) {
+                    // this event spans multiple days
+                    formattedDateStr = `
+                      ${startDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })} 
+                      - ${endDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                    `;
+                  } else {
+                    formattedDateStr = startDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
+                  }
+
+                  const eventData = {
+                    dateStr: formattedDateStr,
+                    title: event.summary,
+                    timeStr: formattedTimeStr,
+                    location: event.location === undefined ? 'No location' : event.location,
+                    description: event.description === undefined ? 'No description' : event.description
+                  };
+                  console.log(eventData);
+
+                  const event_card_html = `
+                    <div class="event-card">
+                      <div class="card-header">
+                        <h2 class="date">${eventData.dateStr}</h2>
+                        <h3 class="event-title">${eventData.title}</h3>
+                        <p class="dayWithTime">${eventData.timeStr}</p>
+                        <p class="location">
+                          <span class="icon icon-map-pin">{%- render 'icon-map-pin' -%}</span>
+                          ${eventData.location}
+                        </p>
+                      </div>
+                        <p id="description" class="description ellipsis">${eventData.description}</p>
+                      <button class=" chevron-button button button--secondary" onclick="toggleDesc(this)">{%- render 'icon-chevron-down' -%}</button>
+                    </div>
+                  `;
+                  document.getElementById("events-container").innerHTML += event_card_html;
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching events:', error);
+            });
+
+</script>
+
+
+{% schema %}
+  {
+    "name": "Upcoming Events",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "Upcoming Events"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Section Subitle",
+        "default": "subtitle"
+      },
+      {
+        "type": "color",
+        "id": "title_color",
+        "label": "Section Title Color"
+      },
+      {
+        "type": "text",
+        "id": "cal_key",
+        "label": "Calendar API Key",
+        "default": "key"
+      },
+      {
+        "type": "text",
+        "id": "cal_id",
+        "label": "Calendar ID",
+        "default": "id"
+      }
+
+      
+    ],
+    "presets": [
+      {
+        "name": "Upcoming Events Section"
+      }
+    ]
+  }
+{% endschema %}
+  

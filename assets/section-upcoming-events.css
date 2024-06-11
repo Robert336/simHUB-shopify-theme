@@ -1,0 +1,105 @@
+
+.section {
+  box-sizing: border-box;
+}
+
+.events-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 8px;
+  width: 445px;
+  max-height: 300px;
+  background-color: #F5F7FF;
+  border-radius: 8px;
+  padding: 20px;
+
+  scroll-snap-align: center;
+  scroll-margin: 0;
+}
+
+@media screen and (max-width: 749px){
+  .events-container {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .event-card {
+    width: 90vw;
+  }
+
+  .event-card .location {
+    align-items: flex-start;
+  }
+}
+
+.event-card.open {
+  max-height: fit-content;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.date {
+  margin: 0;
+}
+
+.event-title{
+  margin: 0;
+}
+
+.dayWithTime {
+  margin: 0;
+}
+
+.location {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-map-pin {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+.card-body {
+  text-overflow: ellipsis;
+}
+
+.description {
+  margin: 0;
+  overflow: hidden;
+  flex-grow: 1;
+
+}
+
+.description.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.event-card .chevron-button {
+}
+
+.event-card .chevron-button.point-up {
+  transform: rotate(180deg);
+}
+
