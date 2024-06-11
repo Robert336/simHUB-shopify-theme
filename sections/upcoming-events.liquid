@@ -26,8 +26,8 @@
     const eventCard = element.closest('.event-card');
     const eventDesc = eventCard.querySelector('#description');
 
-    console.log(eventCard);
-    console.log(eventDesc);
+    // console.log(eventCard);
+    // console.log(eventDesc);
 
     element.classList.toggle('point-up')
 
@@ -48,10 +48,7 @@
   // the API request origin is set to simhubrl.ca and simhubrl.myshopify.com
   const CAL_KEY = '{{ section.settings.cal_key }}';
   const CAL_ID = '{{ section.settings.cal_id }}';
-  const url = `https://www.googleapis.com/calendar/v3/calendars/${CAL_ID}/events?key=${CAL_KEY}`;
-  console.log("this also runs.")
-
-  
+  const url = `https://www.googleapis.com/calendar/v3/calendars/${CAL_ID}/events?key=${CAL_KEY}?orderBy=startTime`;
 
   /*
     Data to extract:
@@ -65,7 +62,7 @@
   fetch(url)
             .then(response => response.json())
             .then(data => {
-                console.log(data);
+                // console.log(data);
                 const events = data.items;
                 events.forEach(event => {
 
@@ -103,7 +100,7 @@
                     location: event.location === undefined ? 'No location' : event.location,
                     description: event.description === undefined ? 'No description' : event.description
                   };
-                  console.log(eventData);
+                  // console.log(eventData);
 
                   const event_card_html = `
                     <div class="event-card">
