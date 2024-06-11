@@ -1,0 +1,26 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "upcoming_events_W6j4KJ": {
+      "type": "upcoming-events",
+      "settings": {
+        "title": "Upcoming Events",
+        "subtitle": "subtitle",
+        "title_color": "",
+        "cal_key": "AIzaSyBtYovnizbrgKn7nfIChaAdHJkZ5N-5ndw",
+        "cal_id": "bcf9dddc4eaf00bb87cd115d1cee96b6f82e50950d80aade5ab849a4484278eb%40group.calendar.google.com"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "upcoming_events_W6j4KJ"
+  ]
+}
