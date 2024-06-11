@@ -48,7 +48,7 @@
   // the API request origin is set to simhubrl.ca and simhubrl.myshopify.com
   const CAL_KEY = '{{ section.settings.cal_key }}';
   const CAL_ID = '{{ section.settings.cal_id }}';
-  const url = `https://www.googleapis.com/calendar/v3/calendars/${CAL_ID}/events?key=${CAL_KEY}?orderBy=startTime`;
+  const url = `https://www.googleapis.com/calendar/v3/calendars/${CAL_ID}/events?key=${CAL_KEY}&orderBy=startTime&singleEvents=true`;
 
   /*
     Data to extract:
