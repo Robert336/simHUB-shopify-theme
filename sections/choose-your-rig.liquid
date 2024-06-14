@@ -5,7 +5,7 @@
     <h2 class="section-title">Choose Your Rig</h2>
     <div class="rig-cards">
       {% for block in section.blocks %}
-        <div class="rig-card" id={{ block.id }}>
+        <div class="rig-card color-{{ block.settings.color_scheme }}" id={{ block.id }}>
           <div class="card-media">
             {{
               block.settings.video
@@ -28,7 +28,14 @@
           </div>
           
           <div class="buttons">
-            <button class="card-button button button--secondary" id="button-{{ block.id }}" onclick="changeContent(this)" >Click to view specs</button>
+            {% if block.settings.button_link %}
+               {% assign button_style = 'button--primary' %}
+               {% assign button_behavior = 'href=' | append: block.settings.button_link | escape %}         
+            {% else %}    
+                {% assign button_style = 'button--secondary' %}
+                {% assign button_behavior = 'onclick="changeContent(this)"' %}
+            {% endif %}
+            <a class="card-button button color-scheme-6 {{ button_style }}" id="button-{{ block.id }}" {{ button_behavior }} >{{ block.settings.button_text }}</a>
           </div>
         </div>
       {% endfor %}
@@ -58,6 +65,11 @@
           "label": "t:sections.video.settings.video.label"
         },
         {
+          "type": "color_scheme",
+          "id": "color_scheme",
+          "label": "Card Color Scheme"
+        },
+        {
           "type": "text",
           "id": "title",
           "label": "Card Title"
@@ -71,6 +83,17 @@
           "type": "richtext",
           "id": "extra_specs",
           "label": "Extra Specs"
+        }, 
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Show more"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
         }
       ]
     }
