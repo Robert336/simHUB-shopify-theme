@@ -1,5 +1,5 @@
 @media screen and (max-width: 749px) {
-  .section{
+  .section-container{
     background-color: #1D1F2D;
     box-sizing: border-box;
   }
@@ -23,7 +23,7 @@
 
 }
 
-.section {
+.section-container {
   background-color: #1D1F2D;
   padding-top: 20px;
   padding-bottom: 20px;

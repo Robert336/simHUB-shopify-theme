@@ -1,6 +1,6 @@
 {{ 'section-testimonials.css' | asset_url |stylesheet_tag }}
 
-<div class="section">
+<div class="section-container">
   <div class="testimonials-section page-width">
     {% for block in section.blocks %}
       <div class="testimonial-card" style="border-top: 10px solid {{ block.settings.color }};">
