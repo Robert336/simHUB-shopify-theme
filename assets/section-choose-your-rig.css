@@ -1,11 +1,9 @@
 .choose-your-rig-section {
   background-color: #10111B;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   text-align: center;
-  height: 900px;
-
-  
+  height: 100%;
 }
 .choose-your-rig-section .section-title {
   color: #ffffff;
@@ -74,7 +72,10 @@
 }
 
 @media screen and (min-width: 950px) {
-  
+  .choose-your-rig-section {
+    height: 900px;
+  }
+
   .choose-your-rig-section .rig-cards {
     padding: 20px;
     display: flex;
