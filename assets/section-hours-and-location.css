@@ -50,7 +50,8 @@
   flex-direction: row;
   align-items: center;
   gap: 10px;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 749px) {
