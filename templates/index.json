@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "banner_slideshow_teaa8b": {
@@ -6,8 +15,8 @@
         "banner_slide_L8M8WY": {
           "type": "banner_slide",
           "settings": {
-            "banner_slide_image": "shopify:\/\/shop_images\/file.jpg",
-            "image_overlay_opacity": 70,
+            "banner_slide_image": "shopify:\/\/shop_images\/home-page-hero-1.jpg",
+            "image_overlay_opacity": 50,
             "header_text": "Jump Into a Racing Simulation Experience",
             "subtitle": "We provide Immersive virtual racing experiences using professional grade simulators in Vaughan, Ontario.",
             "primary_button_label": "Book a Simulator",
@@ -35,7 +44,7 @@
           "type": "banner_slide",
           "settings": {
             "banner_slide_image": "shopify:\/\/shop_images\/file.jpg",
-            "image_overlay_opacity": 70,
+            "image_overlay_opacity": 50,
             "header_text": "Race Weekly In Our League",
             "subtitle": "Sign-up for league racing, it’s a fun social environment and competitive racing on a weekly basis.",
             "primary_button_label": "Learn More",
@@ -125,27 +134,36 @@
           "type": "card",
           "settings": {
             "video": "shopify:\/\/files\/videos\/entry-rig-vid.mp4",
+            "color_scheme": "",
             "title": "Entry",
             "subtitle": "Best for those who want a taste of sim racing",
-            "extra_specs": "<p>Monitor: Triple 32’’ Curved Monitors or single 48” Curved Monitor<\/p><p>Wheel: Moza R9 Wheelbase<\/p><p>Pedals: 6 Sigma Custom Pedals<\/p><p>Chassis: 6s-160 Sim Racing Chassis<\/p><p>Accessories: N\/A<\/p>"
+            "extra_specs": "<p>Monitor: Triple 32’’ Curved Monitors or single 48” Curved Monitor<\/p><p>Wheel: Moza R9 Wheelbase<\/p><p>Pedals: 6 Sigma Custom Pedals<\/p><p>Chassis: 6s-160 Sim Racing Chassis<\/p><p>Accessories: N\/A<\/p>",
+            "button_text": "View specs",
+            "button_link": ""
           }
         },
         "card_GKPqGT": {
           "type": "card",
           "settings": {
             "video": "shopify:\/\/files\/videos\/inter-rig-vid.mp4",
+            "color_scheme": "",
             "title": "Intermediate",
             "subtitle": "For the driver that wants to experience added realism from the help of basic motion technology",
-            "extra_specs": "<p>Monitor: Triple 32’’ Curved Monitors<\/p><p>Wheel: Moza R9 Wheelbase<\/p><p>Pedals: 6 Sigma Custom Pedals<\/p><p>Chassis: 6s- 4DOF Motion Sim Racing Chassis<\/p><p>Accessories: N\/A<\/p>"
+            "extra_specs": "<p>Monitor: Triple 32’’ Curved Monitors<\/p><p>Wheel: Moza R9 Wheelbase<\/p><p>Pedals: 6 Sigma Custom Pedals<\/p><p>Chassis: 6s- 4DOF Motion Sim Racing Chassis<\/p><p>Accessories: N\/A<\/p>",
+            "button_text": "View specs",
+            "button_link": ""
           }
         },
         "card_fq6Nfh": {
           "type": "card",
           "settings": {
             "video": "shopify:\/\/files\/videos\/adv-rig-vid.mp4",
+            "color_scheme": "",
             "title": "Advanced",
             "subtitle": "Top-of-the-line motion simulation technology for the highest level of driving realism, delivering 3 times more motion range than the intermediate level",
-            "extra_specs": "<p>Monitor: Triple 32’’ Monitors<\/p><p>Wheel: Moza R21 Wheelbase<\/p><p>Pedals: 6 Sigma Custom Pedals<\/p><p>Chassis: 6s-6DOF Full Motion Sim Racing Chassis<\/p><p>Accessories: Moza HGP Shifter, Moza HBP Handbrake<\/p>"
+            "extra_specs": "<p>Monitor: Triple 32’’ Monitors<\/p><p>Wheel: Moza R21 Wheelbase<\/p><p>Pedals: 6 Sigma Custom Pedals<\/p><p>Chassis: 6s-6DOF Full Motion Sim Racing Chassis<\/p><p>Accessories: Moza HGP Shifter, Moza HBP Handbrake<\/p>",
+            "button_text": "View specs",
+            "button_link": ""
           }
         }
       },
@@ -208,8 +226,8 @@
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "testimonials_BHLJnT": {

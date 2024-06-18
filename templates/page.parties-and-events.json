@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "image_banner_t86aNw": {
@@ -150,6 +159,7 @@
             "price_unit": "\/hour",
             "product": "event-test",
             "button_text": "Book now",
+            "button_link": "",
             "note": "Minimum time of 1 hour"
           }
         },
@@ -159,10 +169,11 @@
             "title": "Off-Site Event",
             "subtitle": "We bring simulators to you",
             "details": "<ul><li>Delivery to your venue<\/li><li>On-site support<\/li><\/ul>",
-            "price_unit": "Contact us for pricing",
+            "price_unit": "",
             "product": "",
             "button_text": "Contact us",
-            "note": ""
+            "button_link": "#shopify-section-template--16223029297263__hours_and_location_w9eReC",
+            "note": "Contact us for pricing"
           }
         }
       },
@@ -175,6 +186,22 @@
         "subtitle": "Choose your type of event",
         "title_color": ""
       }
+    },
+    "hours_and_location_w9eReC": {
+      "type": "hours-and-location",
+      "blocks": {
+        "info_76CHEY": {
+          "type": "info",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "info_76CHEY"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3"
+      }
     }
   },
   "order": [
@@ -182,6 +209,7 @@
     "main",
     "image_with_text_dR4txw",
     "image_with_text_HjjDe8",
-    "pricing_section_RWqWG8"
+    "pricing_section_RWqWG8",
+    "hours_and_location_w9eReC"
   ]
 }
