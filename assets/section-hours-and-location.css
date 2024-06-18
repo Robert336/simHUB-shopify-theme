@@ -69,6 +69,8 @@
   }
 
   .icon-with-text {
+    text-align: center;
+    flex-direction: column;
     justify-content: center;
   }
   

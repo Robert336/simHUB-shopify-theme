@@ -3,7 +3,7 @@
 <div class="page-width info-and-map__grid">
   <div class="info">
     <h1>Location and Hours</h1>
-    <p class="icon-with-text"><span class="icon">{% render 'icon-map-pin' %}</span>{{ shop.address }}</p>
+    <p class="icon-with-text"><span class="icon">{% render 'icon-map-pin' %}</span>{{ shop.address | format_address | replace: "<br>", ", " | strip_html }}</p>
     <p class="icon-with-text"><span class="icon">{% render 'icon-phone' %}</span>{{ shop.phone }}</p>
     <p class="icon-with-text"><span class="icon">{% render 'icon-mail' %}</span>{{ shop.email }}</p>
     <div class="hours-grid">
@@ -54,9 +54,6 @@
       "blocks": [
         {
           "type": "info"
-        },
-        {
-          "type": "map"
         }
       ]
     }
