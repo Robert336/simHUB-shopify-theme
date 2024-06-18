@@ -1,49 +1,50 @@
 {{ 'section-hours-and-location.css' | asset_url | stylesheet_tag }}
 
-<div class="page-width info-and-map__grid">
-  <div class="info">
-    <h1>Location and Hours</h1>
-    <p class="icon-with-text"><span class="icon">{% render 'icon-map-pin' %}</span>{{ shop.address | format_address | replace: "<br>", ", " | strip_html }}</p>
-    <p class="icon-with-text"><span class="icon">{% render 'icon-phone' %}</span>{{ shop.phone }}</p>
-    <p class="icon-with-text"><span class="icon">{% render 'icon-mail' %}</span>{{ shop.email }}</p>
-    <div class="hours-grid">
+<div class="location-hours-section color-{{ section.settings.color_scheme }}">
+  <div class="page-width info-and-map__grid ">
+    <div class="info">
+      <h1>Location and Hours</h1>
+      <p class="icon-with-text"><span class="icon">{% render 'icon-map-pin' %}</span>{{ shop.address | format_address | replace: "<br>", ", " | strip_html }}</p>
+      <p class="icon-with-text"><span class="icon">{% render 'icon-phone' %}</span>{{ shop.phone }}</p>
+      <p class="icon-with-text"><span class="icon">{% render 'icon-mail' %}</span>{{ shop.email }}</p>
+      <div class="hours-grid">
 
-      {% assign default_text_if_closed = "Closed" %}
-      {% assign monday_hours = shop.metaobjects.hours_of_operation.hours-of-operation-monday.opening_time | default: default_text_if_closed %}
-      {% assign tuesday_hours = shop.metaobjects.hours_of_operation.hours-of-operation-tuesday.opening_time | default: default_text_if_closed %}
-      {% assign wednesday_hours =  shop.metaobjects.hours_of_operation.hours-of-operation-wednesday.opening_time | default: default_text_if_closed %}
-      {% assign thursday_hours =  shop.metaobjects.hours_of_operation.hours-of-operation-thursday.opening_time | default: default_text_if_closed %}
-      {% assign friday_hours =  shop.metaobjects.hours_of_operation.hours-of-operation-friday.opening_time | default: default_text_if_closed %}
-      {% assign saturday_hours =  shop.metaobjects.hours_of_operation.hours-of-operation-saturday.opening_time | default: default_text_if_closed %}
-      {% assign sunday_hours =  shop.metaobjects.hours_of_operation.hours-of-operation-sunday.opening_time | default: default_text_if_closed %}
+        {% assign default_text_if_closed = "Closed" %}
+        {% assign monday_hours = shop.metaobjects.hours_of_operation.hours-of-operation-monday.opening_time | default: default_text_if_closed %}
+        {% assign tuesday_hours = shop.metaobjects.hours_of_operation.hours-of-operation-tuesday.opening_time | default: default_text_if_closed %}
+        {% assign wednesday_hours =  shop.metaobjects.hours_of_operation.hours-of-operation-wednesday.opening_time | default: default_text_if_closed %}
+        {% assign thursday_hours =  shop.metaobjects.hours_of_operation.hours-of-operation-thursday.opening_time | default: default_text_if_closed %}
+        {% assign friday_hours =  shop.metaobjects.hours_of_operation.hours-of-operation-friday.opening_time | default: default_text_if_closed %}
+        {% assign saturday_hours =  shop.metaobjects.hours_of_operation.hours-of-operation-saturday.opening_time | default: default_text_if_closed %}
+        {% assign sunday_hours =  shop.metaobjects.hours_of_operation.hours-of-operation-sunday.opening_time | default: default_text_if_closed %}
 
-        
-      <p class="day">Monday</p>
-      <p class="hours">{{ monday_hours }}{% if monday_hours != default_text_if_closed %} - {{ shop.metaobjects.hours_of_operation.hours-of-operation-monday.closing_time }}{% endif %}</p>
-      <p class="day">Tuesday</p>
-      <p class="hours">{{ tuesday_hours }}{% if tuesday_hours != default_text_if_closed %} - {{ shop.metaobjects.hours_of_operation.hours-of-operation-tuesday.closing_time }}{% endif %}</p>
-      <p class="day">Wednesday</p>
-      <p class="hours">{{ wednesday_hours }}{% if wednesday_hours != default_text_if_closed %} - {{ shop.metaobjects.hours_of_operation.hours-of-operation-wednesday.closing_time }}{% endif %}</p>
-      <p class="day">Thursday</p>
-      <p class="hours">{{ thursday_hours }}{% if thursday_hours != default_text_if_closed %} - {{ shop.metaobjects.hours_of_operation.hours-of-operation-thursday.closing_time }}{% endif %}</p>
-      <p class="day">Friday</p>
-      <p class="hours">{{ friday_hours }}{% if friday_hours != default_text_if_closed %} - {{ shop.metaobjects.hours_of_operation.hours-of-operation-friday.closing_time }}{% endif %}</p>
-      <p class="day">Saturday</p>
-      <p class="hours">{{ saturday_hours }}{% if saturday_hours != default_text_if_closed %} - {{ shop.metaobjects.hours_of_operation.hours-of-operation-saturday.closing_time }}{% endif %}</p>
-      <p class="day">Sunday</p>
-      <p class="hours">{{ sunday_hours }}{% if sunday_hours != default_text_if_closed %} - {{ shop.metaobjects.hours_of_operation.hours-of-operation-sunday.closing_time }}{% endif %}</p>
+          
+        <p class="day">Monday</p>
+        <p class="hours">{{ monday_hours }}{% if monday_hours != default_text_if_closed %} - {{ shop.metaobjects.hours_of_operation.hours-of-operation-monday.closing_time }}{% endif %}</p>
+        <p class="day">Tuesday</p>
+        <p class="hours">{{ tuesday_hours }}{% if tuesday_hours != default_text_if_closed %} - {{ shop.metaobjects.hours_of_operation.hours-of-operation-tuesday.closing_time }}{% endif %}</p>
+        <p class="day">Wednesday</p>
+        <p class="hours">{{ wednesday_hours }}{% if wednesday_hours != default_text_if_closed %} - {{ shop.metaobjects.hours_of_operation.hours-of-operation-wednesday.closing_time }}{% endif %}</p>
+        <p class="day">Thursday</p>
+        <p class="hours">{{ thursday_hours }}{% if thursday_hours != default_text_if_closed %} - {{ shop.metaobjects.hours_of_operation.hours-of-operation-thursday.closing_time }}{% endif %}</p>
+        <p class="day">Friday</p>
+        <p class="hours">{{ friday_hours }}{% if friday_hours != default_text_if_closed %} - {{ shop.metaobjects.hours_of_operation.hours-of-operation-friday.closing_time }}{% endif %}</p>
+        <p class="day">Saturday</p>
+        <p class="hours">{{ saturday_hours }}{% if saturday_hours != default_text_if_closed %} - {{ shop.metaobjects.hours_of_operation.hours-of-operation-saturday.closing_time }}{% endif %}</p>
+        <p class="day">Sunday</p>
+        <p class="hours">{{ sunday_hours }}{% if sunday_hours != default_text_if_closed %} - {{ shop.metaobjects.hours_of_operation.hours-of-operation-sunday.closing_time }}{% endif %}</p>
+      </div>
     </div>
-  </div>
-  <div class="map">
-    <iframe style=" border: 0; border-radius: 8px;" width='100%' height='500px' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.077910803132!2d-79.51694802334204!3d43.79199634344215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2e4d26c5bf85%3A0x64dbe2b2ff6312fd!2s101A%20Freshway%20Dr%20Unit%203%2C%20Vaughan%2C%20ON%20L4K%201R9!5e0!3m2!1sen!2sca!4v1718395080213!5m2!1sen!2sca"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="map">
+      <iframe style=" border: 0; border-radius: 8px;" width='100%' height='500px' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.077910803132!2d-79.51694802334204!3d43.79199634344215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2e4d26c5bf85%3A0x64dbe2b2ff6312fd!2s101A%20Freshway%20Dr%20Unit%203%2C%20Vaughan%2C%20ON%20L4K%201R9!5e0!3m2!1sen!2sca!4v1718395080213!5m2!1sen!2sca"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </div>
 </div>
 
 
-
 {% schema %}
 {
-  "name": "t:sections.image-with-text.name",
+  "name": "Location and Hours",
   "class": "section",
   "disabled_on": {
     "groups": ["header", "footer"]

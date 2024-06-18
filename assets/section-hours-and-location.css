@@ -1,9 +1,11 @@
+.location-hours-section {
+  background-color: rgb(var(--color-background));
+  color: rgb(var(--color-foreground));
+}
 
 .info-and-map__grid {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: rgb(var(--color-background));
-  color: rgb(var(--color-foreground));
 
   display: grid;
   grid-template-columns: 1fr 1fr;
